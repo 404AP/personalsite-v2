@@ -1,0 +1,158 @@
+.hero-container {
+  height: 100vh;
+  border: 5px solid black;
+  color: var(--primary-color);
+  font-family: Michroma;
+  display: -ms-grid;
+  display: grid;
+}
+
+.hero-container .top-edge-typography {
+  border-bottom: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: .15em;
+  height: 8vh;
+  margin: 0;
+}
+
+.hero-container .top-edge-typography .top-quotebox {
+  padding-right: 1vw;
+}
+
+.hero-container .top-edge-typography .top-quotebox .quote-tag {
+  text-align: center;
+}
+
+.hero-container .top-edge-typography .top-nametag-box {
+  border-left: 5px solid black;
+  max-width: 25vw;
+}
+
+.hero-container .top-edge-typography .top-nametag-box .name-tag {
+  text-align: center;
+  margin: 1vw 2vw auto 2vw;
+}
+
+.hero-container .heroContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-container .heroContent .hero-left {
+  height: 91.5vh;
+  width: 60vw;
+  border-right: 5px solid black;
+}
+
+.hero-container .heroContent .hero-left .hero-left-top {
+  height: 65%;
+}
+
+.hero-container .heroContent .hero-left .hero-left-top .hero-name {
+  margin: 5vh 0 5vh 0;
+  padding: 0;
+  font-family: subway-new-york-sc, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15em;
+  text-align: center;
+  letter-spacing: .05em;
+  line-height: .7em;
+  color: black;
+}
+
+.hero-container .heroContent .hero-left .hero-left-top .hero-subheading {
+  margin: 0;
+  padding: 0;
+  letter-spacing: .15em;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-container .heroContent .hero-left .hero-left-bottom {
+  height: 18vh;
+  padding: 2vw;
+  border-top: 5px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-container .heroContent .hero-left .hero-left-bottom .react-img {
+  width: 14vw;
+  height: 14vw;
+  margin: -3vw;
+}
+
+.hero-container .heroContent .hero-left .hero-left-bottom .aws-img {
+  width: 20vw;
+  height: 15vw;
+  margin: -2.5vw;
+  padding: 0;
+}
+
+.hero-container .heroContent .hero-right {
+  height: 91.5vh;
+  width: 40vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-container .heroContent .hero-right .monitor-container {
+  height: 80%;
+  padding: 0;
+  margin: -4.5vh;
+}
+
+.hero-container .heroContent .hero-right .monitor-container img {
+  width: 100%;
+}
+
+.hero-container .heroContent .hero-right .hero-right-button-container {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right {
+  margin: auto;
+  background-color: var(--primary-color);
+  border: 1px white solid;
+  width: 40%;
+  height: 30%;
+  color: white;
+  font-family: Michroma;
+  font-size: 1.5em;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  -webkit-box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right-subtext {
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=HeroSection.css.map */

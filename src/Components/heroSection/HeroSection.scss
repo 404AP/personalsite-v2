@@ -1,0 +1,163 @@
+ 
+
+.hero-container {
+     height: 100vh;
+     border: 5px solid black; 
+     color: var(--primary-color);
+     font-family: Michroma;
+     display: grid;
+     
+
+
+        .top-edge-typography {
+        border-bottom: 5px solid black;
+        display: flex;
+        justify-content:space-between;
+        font-weight: bold;  
+        font-size: 1.1em;
+        letter-spacing: .15em;
+        height: 8vh;
+        margin: 0;    
+
+
+            .top-quotebox {
+                
+                // width: 80vw;
+                padding-right: 1vw;
+                .quote-tag {
+                    text-align: center;
+                    
+                }
+            }
+
+            .top-nametag-box {
+                border-left: 5px solid black;
+                max-width:25vw;
+                
+                
+                .name-tag {
+                    text-align: center;
+                    margin: 1vw 2vw auto 2vw;
+                    
+                }
+            }
+        }
+
+        .heroContent {
+            display: flex;
+        
+
+            .hero-left {
+                // background-color: aqua;
+                height: 91.5vh;
+                width: 60vw;
+                border-right: 5px solid black;
+                
+                .hero-left-top {
+                    height: 65%;
+
+                    .hero-name {
+                        margin: 5vh 0 5vh 0;
+                        padding: 0;
+                        font-family: subway-new-york-sc, sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 15em;
+                        text-align: center;
+                        letter-spacing: .05em;
+                        line-height: .7em;
+                        color:black;
+                    }
+
+                    .hero-subheading {
+                        margin: 0;
+                        padding: 0;
+                        letter-spacing: .15em;
+                        font-size: 2.5em;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .hero-left-bottom {
+                    height: 18vh;
+                    padding: 2vw;
+                    
+                    border-top: 5px black solid;
+                    display: flex;
+                    justify-content: space-between;
+                    // background-color: purple;
+                    
+                    .react-img {
+                        width: 14vw;
+                        height: 14vw;
+                        margin: -3vw;
+                    }
+                    .aws-img {
+                        width:20vw;
+                        height:15vw;
+                        margin: -2.5vw;
+                        padding: 0;
+                    }
+                }
+
+                
+
+            }
+
+            .hero-right {
+                height: 91.5vh;
+                width: 40vw;
+                justify-content: center;
+
+                .monitor-container {
+                    height: 80%;
+                    padding:0;
+                    margin:-4.5vh;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .hero-right-button-container {
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    font-weight: bold;  
+                    
+                    .cta-hero-right {
+                        margin: auto;
+                        background-color: var(--primary-color);
+                        border:1px white solid;
+                        width:40%;
+                        height: 30%;
+                        color: white;
+                        font-family:Michroma;
+                        font-size: 1.5em;
+                        letter-spacing: .15em;
+                        text-transform: uppercase;
+                        box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5) ;
+                    }
+                    .cta-hero-right-subtext {
+                        font-size: 1.2em;
+                    }
+                }
+                
+            }
+
+        }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
