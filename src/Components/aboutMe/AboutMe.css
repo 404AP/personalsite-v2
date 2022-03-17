@@ -1,0 +1,65 @@
+.aboutme-container {
+  height: 100vh;
+  background-color: rgba(103, 186, 67, 0.384);
+  font-family: Michroma;
+}
+
+.aboutme-container .aboutme-header {
+  text-transform: uppercase;
+  margin: auto auto auto 3vw;
+  padding: 0;
+  color: white;
+  font-size: 5.5em;
+  font-weight: normal;
+  letter-spacing: .1em;
+  text-shadow: 7px 8px rgba(0, 0, 0, 0.137);
+}
+
+.aboutme-container .aboutme-content-conatiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80vw 20vw;
+      grid-template-columns: 80vw 20vw;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left {
+  height: 80vh;
+  background-color: aqua;
+  width: 75vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40vw 40vw;
+      grid-template-columns: 40vw 40vw;
+  grid-row: 30vw 30vw;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin-left: 3vw;
+  padding: 0;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills {
+  height: 80%;
+  width: 95%;
+  background-color: orchid;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-holder {
+  height: 80%;
+  width: 95%;
+  background-color: transparent;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest {
+  height: 80%;
+  width: 95%;
+  background-color: orchid;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
+  height: 80%;
+  width: 95%;
+  background-color: orchid;
+}
+/*# sourceMappingURL=AboutMe.css.map */

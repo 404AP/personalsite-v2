@@ -9,6 +9,9 @@
 
 .hero-container .top-edge-typography {
   border-bottom: 5px solid black;
+  width: 98.56vw;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +35,6 @@
 
 .hero-container .top-edge-typography .top-nametag-box {
   border-left: 5px solid black;
-  max-width: 25vw;
 }
 
 .hero-container .top-edge-typography .top-nametag-box .name-tag {
@@ -105,10 +107,11 @@
 
 .hero-container .heroContent .hero-right {
   height: 91.5vh;
-  width: 40vw;
+  width: 38.2vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .hero-container .heroContent .hero-right .monitor-container {
@@ -153,6 +156,7 @@
 }
 
 .hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right-subtext {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  letter-spacing: .15em;
 }
 /*# sourceMappingURL=HeroSection.css.map */

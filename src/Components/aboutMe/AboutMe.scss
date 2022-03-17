@@ -1,0 +1,70 @@
+
+
+.aboutme-container {
+    height: 100vh;
+    background-color: rgba(103, 186, 67, 0.384);
+    font-family: Michroma;
+
+    
+    .aboutme-header {
+        text-transform: uppercase;
+        margin: auto auto auto 3vw;
+        padding: 0;
+        color: white;
+        font-size: 5.5em;
+        font-weight: normal;
+        letter-spacing: .1em;
+        text-shadow:7px 8px rgba(0, 0, 0, 0.137);
+    }
+
+    .aboutme-content-conatiner {
+
+        display: grid;
+        grid-template-columns: 80vw 20vw;
+        padding: 0;
+        margin: 0;
+
+
+
+        .aboutme-left {
+            height: 80vh;
+            background-color: aqua;
+            width: 75vw;
+            display: grid;
+            grid-template-columns: 40vw 40vw;
+            grid-row: 30vw 30vw;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            margin-left: 3vw;
+            padding: 0;
+
+            
+            .aboutme-skills {
+                // font-size: 70%;
+                height: 80%;
+                width: 95%;
+                background-color: orchid;
+            }
+
+            .aboutme-holder {
+                height: 80%;
+                width: 95%;
+                background-color: transparent;
+            }
+
+            .aboutme-interest {
+                height: 80%;
+                width: 95%;
+                background-color: orchid;
+            }
+
+            .aboutme-summary {
+                height: 80%;
+                width: 95%;
+                background-color: orchid;
+            }
+
+
+        }
+    }
+}
