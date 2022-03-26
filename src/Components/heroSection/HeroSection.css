@@ -1,10 +1,13 @@
 .hero-container {
   height: 100vh;
+  min-height: 750px;
   border: 5px solid black;
   color: var(--primary-color);
   font-family: Michroma;
   display: -ms-grid;
   display: grid;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-container .top-edge-typography {
@@ -21,15 +24,18 @@
   font-weight: bold;
   font-size: 1.1em;
   letter-spacing: .15em;
-  height: 8vh;
-  margin: 0;
+  height: 5vh;
+  min-height: 42.2px;
 }
 
 .hero-container .top-edge-typography .top-quotebox {
+  margin: auto;
   padding-right: 1vw;
+  height: 100%;
 }
 
 .hero-container .top-edge-typography .top-quotebox .quote-tag {
+  margin: 1% 0 0 0;
   text-align: center;
 }
 
@@ -38,24 +44,29 @@
 }
 
 .hero-container .top-edge-typography .top-nametag-box .name-tag {
+  width: 20vw;
   text-align: center;
-  margin: 1vw 2vw auto 2vw;
+  margin: 3% 0 0 0;
 }
 
 .hero-container .heroContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 718px;
 }
 
 .hero-container .heroContent .hero-left {
-  height: 91.5vh;
+  height: 94.5vh;
+  min-height: 700px;
+  max-height: 705px;
   width: 60vw;
   border-right: 5px solid black;
 }
 
 .hero-container .heroContent .hero-left .hero-left-top {
   height: 65%;
+  min-height: 425.5px;
 }
 
 .hero-container .heroContent .hero-left .hero-left-top .hero-name {
@@ -81,33 +92,54 @@
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom {
-  height: 18vh;
-  padding: 2vw;
+  min-height: 150px;
+  max-height: 200px;
   border-top: 5px black solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero-container .heroContent .hero-left .hero-left-bottom .node-img {
+  min-height: 131px;
+  height: 20vh;
+  max-height: 172px;
+  margin: auto auto;
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom .react-img {
-  width: 14vw;
-  height: 14vw;
-  margin: -3vw;
+  min-height: 200px;
+  min-width: 200px;
+  width: 12vw;
+  height: 12vw;
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto auto;
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom .aws-img {
-  width: 20vw;
+  min-height: 205px;
+  min-width: 308px;
   height: 15vw;
-  margin: -2.5vw;
+  max-height: 205px;
+  max-width: 308px;
+  margin: auto auto;
   padding: 0;
 }
 
 .hero-container .heroContent .hero-right {
-  height: 91.5vh;
+  height: 94.5vh;
+  min-height: 691px;
   width: 38.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -115,17 +147,21 @@
 }
 
 .hero-container .heroContent .hero-right .monitor-container {
-  height: 80%;
+  height: 65%;
+  width: 100%;
   padding: 0;
-  margin: -4.5vh;
+  overflow: hidden;
+  margin: auto;
 }
 
 .hero-container .heroContent .hero-right .monitor-container img {
   width: 100%;
+  height: 100%;
 }
 
 .hero-container .heroContent .hero-right .hero-right-button-container {
   height: 30%;
+  min-height: 228px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,7 +177,7 @@
 }
 
 .hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right {
-  margin: auto;
+  margin: 0 auto 10% auto;
   background-color: var(--primary-color);
   border: 1px white solid;
   width: 40%;

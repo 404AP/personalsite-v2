@@ -1,7 +1,22 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .aboutme-container {
   height: 100vh;
+  min-height: 760px;
   background-color: rgba(103, 186, 67, 0.384);
   font-family: Michroma;
+  background-image: url("../../Assets/self.png");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 30%;
+  background-size: 50%;
 }
 
 .aboutme-container .aboutme-header {
@@ -16,6 +31,7 @@
 }
 
 .aboutme-container .aboutme-content-conatiner {
+  min-height: 604px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80vw 20vw;
@@ -26,40 +42,425 @@
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left {
   height: 80vh;
-  background-color: aqua;
+  min-height: 604px;
   width: 75vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40vw 40vw;
-      grid-template-columns: 40vw 40vw;
-  grid-row: 30vw 30vw;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
   margin-left: 3vw;
   padding: 0;
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills {
-  height: 80%;
-  width: 95%;
+  font-size: 90%;
+  height: 100%;
+  width: 100%;
   background-color: orchid;
+  overflow: hidden;
+  position: relative;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-holder {
-  height: 80%;
-  width: 95%;
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .window-background-img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-skills-subheader.languages {
+  top: 12%;
+  left: 5%;
+  color: var(--primary-color);
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list {
+  list-style: none;
+  top: 18%;
+  left: 5%;
+  position: absolute;
+  margin-bottom: -3vh;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.java {
+  width: 35vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.java .progressbar-title {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.java .progressbar-title h4 {
+  width: 20%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.java .progressbar-title h5 {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.java .progressbar-title .percent {
+  margin: 1% 0 0 0;
+  height: 1vw;
+  width: 27vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.java .progressbar-title .percent .value-1 {
+  height: 100%;
+  width: 85%;
+  background-color: #27ae60;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js {
+  width: 35vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js .progressbar-title {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js .progressbar-title h4 {
+  width: 20%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js .progressbar-title h5 {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js .progressbar-title .percent {
+  margin: 1% 0 0 0;
+  height: 1vw;
+  width: 27vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js .progressbar-title .percent .value-1 {
+  height: 100%;
+  width: 60%;
+  background-color: #27ae60;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.python {
+  width: 35vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.python .progressbar-title {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.python .progressbar-title h4 {
+  width: 20%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.python .progressbar-title h5 {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.python .progressbar-title .percent {
+  margin: 1% 0 0 0;
+  height: 1vw;
+  width: 27vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.python .progressbar-title .percent .value-1 {
+  height: 100%;
+  width: 70%;
+  background-color: #27ae60;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.html {
+  width: 35vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.html .progressbar-title {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.html .progressbar-title h4 {
+  width: 20%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.html .progressbar-title h5 {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.html .progressbar-title .percent {
+  margin: 1% 0 0 0;
+  height: 1vw;
+  width: 27vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.html .progressbar-title .percent .value-1 {
+  height: 100%;
+  width: 60%;
+  background-color: #27ae60;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.css {
+  width: 35vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.css .progressbar-title {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.css .progressbar-title h4 {
+  width: 20%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.css .progressbar-title h5 {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.css .progressbar-title .percent {
+  margin: 1% 0 0 0;
+  height: 1vw;
+  width: 27vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.css .progressbar-title .percent .value-1 {
+  height: 100%;
+  width: 50%;
+  background-color: #27ae60;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills-subheader.SoftwareSkills {
+  top: 64%;
+  left: 5%;
+  color: var(--primary-color);
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-softwarelist {
+  list-style: none;
+  top: 70%;
+  left: 5%;
+  position: absolute;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-skills-subheader {
+  margin-left: 1vw;
+  position: absolute;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.photoshop {
+  width: 35vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.photoshop .progressbar-title {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.photoshop .progressbar-title h4 {
+  width: 20%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.photoshop .progressbar-title h5 {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.photoshop .progressbar-title .percent {
+  margin: 1% 0 0 0;
+  height: 1vw;
+  width: 27vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.photoshop .progressbar-title .percent .value-1 {
+  height: 100%;
+  width: 80%;
+  background-color: #27ae60;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.aftereffects {
+  width: 35vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.aftereffects .progressbar-title {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.aftereffects .progressbar-title h4 {
+  width: 20%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.aftereffects .progressbar-title h5 {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.aftereffects .progressbar-title .percent {
+  margin: 1% 0 0 0;
+  height: 1vw;
+  width: 27vw;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-listitem.aftereffects .progressbar-title .percent .value-1 {
+  height: 100%;
+  width: 70%;
+  background-color: #27ae60;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-holder {
+  height: 100%;
+  width: 100%;
   background-color: transparent;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest {
-  height: 80%;
-  width: 95%;
+.aboutme-container .aboutme-content-conatiner .aboutme-interest {
+  font-size: 90%;
+  height: 100%;
+  width: 100%;
   background-color: orchid;
+  position: relative;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
-  height: 80%;
-  width: 95%;
+.aboutme-container .aboutme-content-conatiner .aboutme-interest .window-background-img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-interest .aboutme-skills-subheader.interest {
+  font-size: 120%;
+  color: var(--primary-color);
+  top: 12%;
+  width: 100%;
+  text-align: center;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-interest .interest-list {
+  padding-right: 10%;
+  top: 20%;
+  left: 10%;
+  position: absolute;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-summary {
+  font-size: 90%;
+  height: 100%;
+  width: 100%;
   background-color: orchid;
+  overflow: hidden;
+  position: relative;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-summary .window-background-img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-summary .aboutme-skills-subheader.summary {
+  font-size: 120%;
+  color: var(--primary-color);
+  top: 12%;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-summary .aboutme-summary-p {
+  top: 20%;
+  left: 4%;
+  position: absolute;
+  width: 90%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-summary .aboutme-summary-p .aboutme-summary-wordhype {
+  color: var(--primary-color);
+}
+
+.aboutme-container .aboutme-right {
+  min-height: 604px;
+  position: relative;
+}
+
+.aboutme-container .aboutme-right .aboutme-folder-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+  bottom: 5%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutme-container .aboutme-right .aboutme-folder-container .aboutme-foldericon {
+  height: 70%;
+  margin: auto;
+}
+
+.aboutme-container .aboutme-right .aboutme-folder-container .folder-cap {
+  margin: -10% auto 0 auto;
+}
+
+.aboutme-container .aboutme-right .aboutme-folder-container .aboutme-download-button {
+  margin-right: 10%;
+  background-color: white;
+  border: 1px var(--primary-color) solid;
+  width: 90%;
+  height: 25%;
+  color: black;
+  font-family: Michroma;
+  font-size: 1.5em;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  -webkit-box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=AboutMe.css.map */

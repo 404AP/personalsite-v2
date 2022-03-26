@@ -1,9 +1,27 @@
 
 
+$font-family: 'Michroma';
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .aboutme-container {
     height: 100vh;
+    min-height: 760px;
     background-color: rgba(103, 186, 67, 0.384);
     font-family: Michroma;
+    background-image: url("../../Assets/self.png");
+    background-repeat:no-repeat;
+    background-position-x: 90%;
+    background-position-y: 30%;
+    background-size: 50%;
+
 
     
     .aboutme-header {
@@ -18,53 +36,488 @@
     }
 
     .aboutme-content-conatiner {
-
+        min-height: 604px;
+        // background-color: #c0392b;
         display: grid;
         grid-template-columns: 80vw 20vw;
         padding: 0;
         margin: 0;
-
+        
 
 
         .aboutme-left {
+            
             height: 80vh;
-            background-color: aqua;
+            min-height: 604px;
+            // background-color: aqua;
             width: 75vw;
             display: grid;
-            grid-template-columns: 40vw 40vw;
-            grid-row: 30vw 30vw;
-            grid-column-gap: 0;
-            grid-row-gap: 0;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-column-gap: 1vw;
+            grid-row-gap: 1vw;
             margin-left: 3vw;
             padding: 0;
 
             
             .aboutme-skills {
-                // font-size: 70%;
-                height: 80%;
-                width: 95%;
+                font-size: 90%;                
+                height: 100%;
+                width: 100%;
                 background-color: orchid;
+                overflow: hidden;
+                position: relative;
+
+                .window-background-img {
+                    width: 100%;
+                    height: 100%;                
+                }
+
+                .aboutme-skills-subheader.languages {
+                    top: 12%;
+                    left:5%;
+                    color: var(--primary-color);
+                }
+
+                .aboutme-languages-list{
+                    list-style: none;
+                    top: 18%;
+                    left: 5%;
+                    position: absolute;
+                    margin-bottom: -3vh;
+
+                    .aboutme-listitem.java {
+                        width: 35vw;
+                        
+
+                        .progressbar-title {
+                            width: 35vw;
+                            // background-color: #1199ff;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            h4 {
+                                
+                                width:20%;
+                            }
+                            
+                            h5 {
+                                padding: 1%;
+                                margin-right: 2%;
+                            }
+
+                            .percent {
+                                margin: 1% 0 0 0;
+                                height: 1vw;
+                                width: 27vw;
+                                // padding-top: 2%;
+                                // background-color: #3c2279;
+
+                                .value-1 {
+
+                                    height: 100%;
+                                    width: 85%;
+                                    background-color: #27ae60;
+                                }
+                            }
+                        }
+
+                            
+                    }
+
+                    .aboutme-listitem.js {
+                        width: 35vw;
+                        
+
+                        .progressbar-title {
+                            width: 35vw;
+                            // background-color: #1199ff;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            h4 {
+                                width:20%;
+                                
+                            }
+                            
+                            h5 {
+                                padding: 1%; 
+                                margin-right: 2%;
+                            }
+
+                            .percent {
+                                margin: 1% 0 0 0;
+                                height: 1vw;
+                                width: 27vw;
+                                // padding-top: 2%;
+                                // background-color: #3c2279;
+
+                                .value-1 {
+
+                                    height: 100%;
+                                    width: 60%;
+                                    background-color: #27ae60;
+                                }
+                            }
+                        }
+
+                            
+                    }
+
+                    .aboutme-listitem.python {
+                        width: 35vw;
+                        
+
+                        .progressbar-title {
+                            width: 35vw;
+                            // background-color: #1199ff;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            h4 {
+                                width:20%;
+                                // margin-right: 6%;
+                            }
+                            
+                            h5 {
+                                padding: 1%; 
+                                margin-right: 2%;
+                            }
+
+                            .percent {
+                                margin: 1% 0 0 0;
+                                height: 1vw;
+                                width: 27vw;
+                                // padding-top: 2%;
+                                // background-color: #3c2279;
+
+                                .value-1 {
+
+                                    height: 100%;
+                                    width: 70%;
+                                    background-color: #27ae60;
+                                }
+                            }
+                        }
+
+                            
+                    }
+
+                    .aboutme-listitem.html {
+                        width: 35vw;
+                        
+
+                        .progressbar-title {
+                            width: 35vw;
+                            // background-color: #1199ff;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            h4 {
+                                width:20%;
+                                // margin-right: 7%;
+                            }
+                            
+                            h5 {
+                                padding: 1%; 
+                                margin-right: 2%;
+                            }
+
+                            .percent {
+                                margin: 1% 0 0 0;
+                                height: 1vw;
+                                width: 27vw;
+                                // padding-top: 2%;
+                                // background-color: #3c2279;
+
+                                .value-1 {
+
+                                    height: 100%;
+                                    width: 60%;
+                                    background-color: #27ae60;
+                                }
+                            }
+                        }
+         
+                    }
+
+                    .aboutme-listitem.css {
+                        width: 35vw;
+                        
+
+                        .progressbar-title {
+                            width: 35vw;
+                            // background-color: #1199ff;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            h4 {
+                                width:20%;
+                                // margin-right: 7%;
+                            }
+                            
+                            h5 {
+                                padding: 1%; 
+                                margin-right: 2%;
+                            }
+
+                            .percent {
+                                margin: 1% 0 0 0;
+                                height: 1vw;
+                                width: 27vw;
+                                // padding-top: 2%;
+                                // background-color: #3c2279;
+
+                                .value-1 {
+
+                                    height: 100%;
+                                    width: 50%;
+                                    background-color: #27ae60;
+                                }
+                            }
+                        }
+                            
+                    }
+
+                }
+
+            }
+                
+                .aboutme-skills-subheader.SoftwareSkills {
+                    top: 64%;
+                    left: 5%;
+                    color: var(--primary-color);
+                }
+
+                .aboutme-softwarelist{
+                    list-style: none;
+                    top: 70%;
+                    left: 5%;
+                    position: absolute;
+                }
+            }
+
+            .aboutme-skills-subheader {
+                margin-left: 1vw;
+                position: absolute;
+            }
+
+            .aboutme-listitem.photoshop {
+                width: 35vw;
+                
+
+                .progressbar-title {
+                    width: 35vw;
+                    // background-color: #1199ff;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    h4 {
+                        width:20%;
+                        // margin-right: 7%;
+                    }
+                    
+                    h5 {
+                        padding: 1%; 
+                        margin-right: 2%;
+                    }
+
+                    .percent {
+                        margin: 1% 0 0 0;
+                        height: 1vw;
+                        width: 27vw;
+                        // padding-top: 2%;
+                        // background-color: #3c2279;
+
+                        .value-1 {
+
+                            height: 100%;
+                            width: 80%;
+                            background-color: #27ae60;
+                        }
+                    }
+                }
+                    
+            }
+
+            .aboutme-listitem.aftereffects {
+                width: 35vw;
+                
+
+                .progressbar-title {
+                    width: 35vw;
+                    // background-color: #1199ff;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    h4 {
+                        width:20%;
+                        // margin-right: 7%;
+                    }
+                    
+                    h5 {
+                        padding: 1%; 
+                        margin-right: 2%;
+                    }
+
+                    .percent {
+                        margin: 1% 0 0 0;
+                        height: 1vw;
+                        width: 27vw;
+                        // padding-top: 2%;
+                        // background-color: #3c2279;
+
+                        .value-1 {
+
+                            height: 100%;
+                            width: 70%;
+                            background-color: #27ae60;
+                        }
+                    }
+                }
+                    
             }
 
             .aboutme-holder {
-                height: 80%;
-                width: 95%;
+                height: 100%;
+                width: 100%;
                 background-color: transparent;
             }
 
             .aboutme-interest {
-                height: 80%;
-                width: 95%;
+                font-size: 90%;
+                height: 100%;
+                width: 100%;
                 background-color: orchid;
+                position: relative;
+                
+                .window-background-img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .aboutme-skills-subheader.interest {
+                    font-size: 120%;
+                    color: var(--primary-color);
+                    top: 12%;
+                    width: 100%;
+                    text-align: center;
+                    
+                }
+
+
+                .interest-list {
+                    
+                    padding-right: 10%;
+                    top: 20%;
+                    left: 10%;
+                    position: absolute;
+                }
+
             }
 
             .aboutme-summary {
-                height: 80%;
-                width: 95%;
+                font-size: 90%;                
+                height: 100%;
+                width: 100%;
                 background-color: orchid;
+                overflow: hidden;
+                position: relative;
+
+                .window-background-img {
+                    width: 100%;
+                    height: 100%;
+                    // display: none;
+                
+                }
+
+                .aboutme-skills-subheader.summary {
+                    font-size: 120%;
+                    color: var(--primary-color);
+                    top: 12%;
+                    width: 100%;
+                    text-align: center;
+                    position: absolute;
+
+                }
+                
+                .aboutme-summary-p {
+                    top: 20%;
+                    left: 4%;
+                    position: absolute;
+                    width: 90%;
+
+                    .aboutme-summary-wordhype {
+                        color: var(--primary-color);
+                    }
+
+
+                }
+
+
+
+
             }
 
 
         }
-    }
+
+        .aboutme-right {
+            min-height: 604px;
+            // background-color: purple;
+            position: relative;
+
+
+            .aboutme-folder-container{
+                justify-content: center;
+                width: 100%;
+                height: 50%;
+                // background-color: GREEN;
+                bottom: 5%; 
+                position: absolute;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                
+                
+
+                .aboutme-foldericon {
+                    height: 70%;
+                    // background-color: yellow;
+                    margin: auto;
+                }
+
+                .folder-cap {
+                    margin: -10% auto 0 auto;
+                    
+                }
+
+
+
+                .aboutme-download-button {
+                    margin-right:10%;
+
+                    background-color:white;
+                    border:1px var(--primary-color) solid;
+
+                    width:90%;
+                    height: 25%;
+
+                    color: black;
+                    font-family:Michroma;
+
+                    font-size: 1.5em;
+                    letter-spacing: .15em;
+
+                    text-transform: uppercase;
+                    box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
+                }
+
+
+
+            }
+
+                
+        }
 }
