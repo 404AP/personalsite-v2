@@ -1,0 +1,17 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.project-icon-container {
+  width: 14vw;
+  height: 7vw;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+/*# sourceMappingURL=Projects.css.map */

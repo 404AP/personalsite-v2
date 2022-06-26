@@ -1,0 +1,20 @@
+
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.project-icon-container {
+    width: 14vw;
+    height: 7vw;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    
+}

@@ -21,6 +21,8 @@ $font-family: 'Michroma';
     background-position-x: 90%;
     background-position-y: 30%;
     background-size: 50%;
+    border-bottom: solid black 5px;
+    
 
 
     
@@ -65,7 +67,7 @@ $font-family: 'Michroma';
                 height: 100%;
                 width: 100%;
                 background-color: orchid;
-                overflow: hidden;
+                // overflow: hidden;
                 position: relative;
 
                 .window-background-img {
@@ -74,14 +76,17 @@ $font-family: 'Michroma';
                 }
 
                 .aboutme-skills-subheader.languages {
-                    top: 12%;
-                    left:5%;
+                    font-size: 120%;
+                    top: 15%;
+                    left:40%;
+                    // background-color: magenta;
                     color: var(--primary-color);
+                    position: absolute;
                 }
 
                 .aboutme-languages-list{
                     list-style: none;
-                    top: 18%;
+                    top: 25%;
                     left: 5%;
                     position: absolute;
                     margin-bottom: -3vh;
@@ -155,7 +160,7 @@ $font-family: 'Michroma';
                                 .value-1 {
 
                                     height: 100%;
-                                    width: 60%;
+                                    width: 80%;
                                     background-color: #27ae60;
                                 }
                             }
@@ -233,7 +238,7 @@ $font-family: 'Michroma';
                                 .value-1 {
 
                                     height: 100%;
-                                    width: 60%;
+                                    width: 70%;
                                     background-color: #27ae60;
                                 }
                             }
@@ -271,7 +276,45 @@ $font-family: 'Michroma';
                                 .value-1 {
 
                                     height: 100%;
-                                    width: 50%;
+                                    width: 70%;
+                                    background-color: #27ae60;
+                                }
+                            }
+                        }
+                            
+                    }
+
+                    .aboutme-listitem.php {
+                        width: 35vw;
+                        
+
+                        .progressbar-title {
+                            width: 35vw;
+                            // background-color: #1199ff;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            h4 {
+                                width:20%;
+                                // margin-right: 7%;
+                            }
+                            
+                            h5 {
+                                padding: 1%; 
+                                margin-right: 2%;
+                            }
+
+                            .percent {
+                                margin: 1% 0 0 0;
+                                height: 1vw;
+                                width: 27vw;
+                                // padding-top: 2%;
+                                // background-color: #3c2279;
+
+                                .value-1 {
+
+                                    height: 100%;
+                                    width: 70%;
                                     background-color: #27ae60;
                                 }
                             }
@@ -282,101 +325,9 @@ $font-family: 'Michroma';
                 }
 
             }
-                
-                .aboutme-skills-subheader.SoftwareSkills {
-                    top: 64%;
-                    left: 5%;
-                    color: var(--primary-color);
-                }
-
-                .aboutme-softwarelist{
-                    list-style: none;
-                    top: 70%;
-                    left: 5%;
-                    position: absolute;
-                }
-            }
-
-            .aboutme-skills-subheader {
-                margin-left: 1vw;
-                position: absolute;
-            }
-
-            .aboutme-listitem.photoshop {
-                width: 35vw;
+        }
                 
 
-                .progressbar-title {
-                    width: 35vw;
-                    // background-color: #1199ff;
-                    display: flex;
-                    justify-content: space-between;
-                    
-                    h4 {
-                        width:20%;
-                        // margin-right: 7%;
-                    }
-                    
-                    h5 {
-                        padding: 1%; 
-                        margin-right: 2%;
-                    }
-
-                    .percent {
-                        margin: 1% 0 0 0;
-                        height: 1vw;
-                        width: 27vw;
-                        // padding-top: 2%;
-                        // background-color: #3c2279;
-
-                        .value-1 {
-
-                            height: 100%;
-                            width: 80%;
-                            background-color: #27ae60;
-                        }
-                    }
-                }
-                    
-            }
-
-            .aboutme-listitem.aftereffects {
-                width: 35vw;
-                
-
-                .progressbar-title {
-                    width: 35vw;
-                    // background-color: #1199ff;
-                    display: flex;
-                    justify-content: space-between;
-                    
-                    h4 {
-                        width:20%;
-                        // margin-right: 7%;
-                    }
-                    
-                    h5 {
-                        padding: 1%; 
-                        margin-right: 2%;
-                    }
-
-                    .percent {
-                        margin: 1% 0 0 0;
-                        height: 1vw;
-                        width: 27vw;
-                        // padding-top: 2%;
-                        // background-color: #3c2279;
-
-                        .value-1 {
-
-                            height: 100%;
-                            width: 70%;
-                            background-color: #27ae60;
-                        }
-                    }
-                }
-                    
-            }
 
             .aboutme-holder {
                 height: 100%;
@@ -402,6 +353,7 @@ $font-family: 'Michroma';
                     top: 12%;
                     width: 100%;
                     text-align: center;
+                    position: absolute;
                     
                 }
 

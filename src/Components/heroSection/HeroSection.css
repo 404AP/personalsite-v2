@@ -54,23 +54,21 @@
   display: -ms-flexbox;
   display: flex;
   min-height: 718px;
+  overflow: hidden;
 }
 
 .hero-container .heroContent .hero-left {
   height: 94.5vh;
-  min-height: 700px;
-  max-height: 705px;
   width: 60vw;
   border-right: 5px solid black;
 }
 
 .hero-container .heroContent .hero-left .hero-left-top {
-  height: 65%;
   min-height: 425.5px;
 }
 
 .hero-container .heroContent .hero-left .hero-left-top .hero-name {
-  margin: 5vh 0 5vh 0;
+  margin: 15vh 0 8vh 0;
   padding: 0;
   font-family: subway-new-york-sc, sans-serif;
   font-weight: 400;
@@ -92,7 +90,6 @@
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom {
-  min-height: 150px;
   max-height: 200px;
   border-top: 5px black solid;
   display: -webkit-box;
@@ -106,7 +103,8 @@
   min-height: 131px;
   height: 20vh;
   max-height: 172px;
-  margin: auto auto;
+  margin: 0 auto;
+  position: relative;
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom .react-img {
@@ -116,16 +114,16 @@
   height: 12vw;
   max-width: 200px;
   max-height: 200px;
-  margin: auto auto;
+  margin: -2vh auto;
 }
 
-.hero-container .heroContent .hero-left .hero-left-bottom .aws-img {
+.hero-container .heroContent .hero-left .hero-left-bottom .vercel-img {
   min-height: 205px;
   min-width: 308px;
   height: 15vw;
   max-height: 205px;
   max-width: 308px;
-  margin: auto auto;
+  margin: -2vh auto;
   padding: 0;
 }
 

@@ -19,6 +19,7 @@ export default class AboutMe extends Component {
                     <div className="aboutme-skills">
                         <img src={WindowIMG} alt="Skills Section" className="window-background-img" />
                         <h4 className="aboutme-skills-subheader languages"> Languages:</h4>
+                        <br></br>
                         <ul className="aboutme-languages-list">
                             <li className="aboutme-listitem java">
                             <div class="progressbar-title">
@@ -35,7 +36,7 @@ export default class AboutMe extends Component {
                                 <div class="percent" id="js-pourcent">
                                     <div className="value-1"></div>
                                     </div>
-                                <h5 className="pourcent">60%</h5>
+                                <h5 className="pourcent">80%</h5>
                             </div>
                             </li>
                             <li className="aboutme-listitem python">
@@ -53,7 +54,7 @@ export default class AboutMe extends Component {
                                 <div class="percent" id="html-pourcent">
                                     <div className="value-1"></div>
                                     </div>
-                                <h5 className="pourcent">60%</h5>
+                                <h5 className="pourcent">70%</h5>
                             </div>
                             </li>
                             <li className="aboutme-listitem css">
@@ -62,31 +63,20 @@ export default class AboutMe extends Component {
                                 <div class="percent" id="css-pourcent">
                                     <div className="value-1"></div>
                                     </div>
-                                <h5 className="pourcent">50%</h5>
+                                <h5 className="pourcent">70%</h5>
                             </div>       
                             </li>
-                            </ul>
-                        <h4 className="aboutme-skills-subheader SoftwareSkills"> Software Skills:</h4>
-                        <ul className="aboutme-softwarelist">
-                            <li className="aboutme-listitem photoshop">
+                            <li className="aboutme-listitem php">
                             <div class="progressbar-title">
-                                <h4>PS</h4>
-                                <div class="percent" id="am-pourcent">
-                                    <div className="value-1"></div>
-                                    </div>
-                                <h5 className="pourcent">80%</h5>
-                            </div> 
-                            </li>
-                            <li className="aboutme-listitem aftereffects">
-                            <div class="progressbar-title">
-                                <h4>AE</h4>
-                                <div class="percent" id="ae-pourcent">
+                                <h4>Php</h4>
+                                <div class="percent" id="php-pourcent">
                                     <div className="value-1"></div>
                                     </div>
                                 <h5 className="pourcent">70%</h5>
-                            </div> 
+                            </div>       
                             </li>
                             </ul>
+                    
                         </div>
                     <div className="aboutme-holder">
                         </div>
@@ -94,9 +84,10 @@ export default class AboutMe extends Component {
                         <img src={WindowIMG} alt="Skills Section" className="window-background-img" />
                         <h4 className="aboutme-skills-subheader interest"> Interest:</h4>
                         <ul className="interest-list">
-                            <li className="aboutme-listitem">I really like  Economics in General</li>
-                            <li className="aboutme-listitem">Crypto is the future of finance and NFT's will change investing forever</li>
+                            <li className="aboutme-listitem">Economics in General</li>
+                            <li className="aboutme-listitem">Crypto as the future of finance and building utility for NFT's in the real world</li>
                             <li className="aboutme-listitem">I love the impact of sports more than any particular team or player</li>
+                            <li className="aboutme-listitem">Various Art Forms but mainly music, paintings, and film. </li>
                             </ul>
                         </div>
                     <div className="aboutme-summary">
@@ -113,8 +104,7 @@ export default class AboutMe extends Component {
                         <img src={FolderIMG} alt="Download Resume" className="aboutme-foldericon" />
                         <p className="folder-cap">
                             Take a Copy of my Resume.
-                            
-                            </p>
+                        </p>
                         <button className="aboutme-download-button">Download</button> 
                         </div>
                         

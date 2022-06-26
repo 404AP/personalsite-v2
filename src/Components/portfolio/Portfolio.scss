@@ -1,7 +1,89 @@
 
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 .portfolio-container {
     height: 100vh;
-    background-color: tan
+    min-height: 750px;
+    // background-color: tan;
+    font-family: Michroma;
+    border-bottom: solid black 5px;
+    overflow: hidden;
+
+    .portfolio-header {
+        text-transform: uppercase;
+        margin: auto auto auto 3vw;
+        padding: 0;
+        color: var(--primary-color);
+        font-size: 5.5em;
+        font-weight: normal;
+        letter-spacing: .1em;
+        text-shadow:7px 8px rgba(0, 0, 0, 0.137);
+    }
+
+    .portfolio-content-container {
+        margin: auto;
+        width: 95%;
+        height: 80%;
+        background-color: chocolate;
+        display: flex;
+
+        .portfolio-left {
+            width: 40%;
+            height: 100%;
+            
+            background-color: aqua;
+
+            .project-list-container {
+                margin: 4vh auto;                
+                width: 80%;
+                height: 55%;
+                //background-color: grey;
+                ul {
+                    list-style: none;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 50% 50%;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 10px;
+
+                }
+            }
+
+            .portfolio-projects-header {
+                color: var(--primary-color);
+                text-align: center;
+            }
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .portfolio-right {
+            width: 60%;
+            height: 100%;
+            background-color: green;
+            
+            .portfolio-preview-container {
+                height: 75%;
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+
+
 }
