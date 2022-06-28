@@ -67,6 +67,7 @@
 
 .portfolio-container .portfolio-content-container .portfolio-left img {
   width: 50%;
+  margin: auto;
 }
 
 .portfolio-container .portfolio-content-container .portfolio-right {

@@ -21,7 +21,7 @@
         display: flex;
         justify-content:space-between;
         font-weight: bold;  
-        font-size: 1.1em;
+        font-size: 1.1vw;
         letter-spacing: .15em;
         height: 5vh;
         min-height: 42.2px;  
@@ -62,13 +62,13 @@
             .hero-left {
                 // background-color: aqua;
                 height: 94.5vh;
-                //min-height: 700px;
+                min-height: 700px;
                 //max-height: 705px;
                 width: 60vw;
                 border-right: 5px solid black;
-                
+                display: grid;
                 .hero-left-top {
-                    //height: 65%;
+                    height: 65%;
                     min-height: 425.5px;
                     // background-color: magenta;
                     
@@ -78,7 +78,7 @@
                         font-family: subway-new-york-sc, sans-serif;
                         font-weight: 400;
                         font-style: normal;
-                        font-size: 15em;
+                        font-size: 13vw;
                         text-align: center;
                         letter-spacing: .05em;
                         line-height: .7em;
@@ -89,16 +89,17 @@
                         margin: 0;
                         padding: 0;
                         letter-spacing: .15em;
-                        font-size: 2.5em;
+                        font-size: 2.5vw;
                         text-align: center;
                         text-transform: uppercase;
                     }
                 }
 
                 .hero-left-bottom {
-                    // min-height: 150px;
-                    max-height: 200px;
-                    border-top: 5px black solid;
+                    min-height: 150px;
+                    max-height: 150px;
+                    height: 35%;
+                    margin-top: 0;
                     display: flex;
                     justify-content: space-around;
                     
@@ -107,7 +108,7 @@
                     
                     .node-img {
                         min-height: 131px;
-                        height:20vh;
+                        // height:20vh;
                         max-height:172px;
                         margin: 0 auto;
                         position: relative;
@@ -115,20 +116,20 @@
                     }
                     .react-img {
                         min-height: 200px;
-                        min-width: 200px;
-                        width: 12vw;
-                        height: 12vw;
+                        // min-width: 200px;
+                        // width: 12vw;
+                        // height: 12vw;
                         max-width: 200px;
                         max-height:200px;
-                        margin: -2vh auto;
+                        margin: -4vh auto;
                     }
                     .vercel-img {
-                        min-height: 205px;
-                        min-width:308px;
-                        height:15vw;
+                       min-height: 205px;
+                        // min-width:308px;
+                        // height:15vw;
                         max-height:205px;
                         max-width: 308px;
-                        margin: -2vh auto;
+                        margin: -4vh auto;
                         padding: 0;
                     }
                 }
@@ -181,7 +182,7 @@
                         color: white;
                         font-family:Michroma;
 
-                        font-size: 1.5em;
+                        font-size: 1.5vw;
                         letter-spacing: .15em;
 
                         text-transform: uppercase;

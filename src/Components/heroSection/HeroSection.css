@@ -22,7 +22,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.1vw;
   letter-spacing: .15em;
   height: 5vh;
   min-height: 42.2px;
@@ -59,11 +59,15 @@
 
 .hero-container .heroContent .hero-left {
   height: 94.5vh;
+  min-height: 700px;
   width: 60vw;
   border-right: 5px solid black;
+  display: -ms-grid;
+  display: grid;
 }
 
 .hero-container .heroContent .hero-left .hero-left-top {
+  height: 65%;
   min-height: 425.5px;
 }
 
@@ -73,7 +77,7 @@
   font-family: subway-new-york-sc, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 15em;
+  font-size: 13vw;
   text-align: center;
   letter-spacing: .05em;
   line-height: .7em;
@@ -84,14 +88,16 @@
   margin: 0;
   padding: 0;
   letter-spacing: .15em;
-  font-size: 2.5em;
+  font-size: 2.5vw;
   text-align: center;
   text-transform: uppercase;
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom {
-  max-height: 200px;
-  border-top: 5px black solid;
+  min-height: 150px;
+  max-height: 150px;
+  height: 35%;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +107,6 @@
 
 .hero-container .heroContent .hero-left .hero-left-bottom .node-img {
   min-height: 131px;
-  height: 20vh;
   max-height: 172px;
   margin: 0 auto;
   position: relative;
@@ -109,21 +114,16 @@
 
 .hero-container .heroContent .hero-left .hero-left-bottom .react-img {
   min-height: 200px;
-  min-width: 200px;
-  width: 12vw;
-  height: 12vw;
   max-width: 200px;
   max-height: 200px;
-  margin: -2vh auto;
+  margin: -4vh auto;
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom .vercel-img {
   min-height: 205px;
-  min-width: 308px;
-  height: 15vw;
   max-height: 205px;
   max-width: 308px;
-  margin: -2vh auto;
+  margin: -4vh auto;
   padding: 0;
 }
 
@@ -182,7 +182,7 @@
   height: 30%;
   color: white;
   font-family: Michroma;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   letter-spacing: .15em;
   text-transform: uppercase;
   -webkit-box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);

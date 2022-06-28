@@ -8,7 +8,18 @@ export default class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          items:[{text: 'xxx', img:"", key:"0", title:"SpeedyIntegrationScript"}, {text: 'xxx', img:"", key:"1", title:"Grindset Global"} ],
+          items:[
+            {text: 'xxx',
+            img:"",
+            key:"0",
+            title:"SpeedyIntegrationScript"}
+            ,
+            {text: 'xxx',
+            img:"",
+            key:"1",
+            title:"Grindset Global"}
+         ],
+         
           currentItem:{
             text:'',
             img: '',
@@ -28,6 +39,10 @@ export default class Portfolio extends Component {
         if (this.state.currentItem.title) {
             this.loadProjects();
         }
+    }
+
+    setPreview = () => {
+
     }
 
     loadProjects = () => {
