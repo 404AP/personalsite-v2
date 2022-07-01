@@ -296,13 +296,13 @@
   background-color: #27ae60;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-holder {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-holder {
   height: 100%;
   width: 100%;
   background-color: transparent;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-interest {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest {
   font-size: 90%;
   height: 100%;
   width: 100%;
@@ -310,12 +310,12 @@
   position: relative;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-interest .window-background-img {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest .window-background-img {
   width: 100%;
   height: 100%;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-interest .aboutme-skills-subheader.interest {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest .aboutme-skills-subheader.interest {
   font-size: 120%;
   color: var(--primary-color);
   top: 12%;
@@ -324,14 +324,14 @@
   position: absolute;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-interest .interest-list {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest .interest-list {
   padding-right: 10%;
   top: 20%;
   left: 10%;
   position: absolute;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-summary {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
   font-size: 90%;
   height: 100%;
   width: 100%;
@@ -340,12 +340,12 @@
   position: relative;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-summary .window-background-img {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .window-background-img {
   width: 100%;
   height: 100%;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-summary .aboutme-skills-subheader.summary {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .aboutme-skills-subheader.summary {
   font-size: 120%;
   color: var(--primary-color);
   top: 12%;
@@ -354,23 +354,23 @@
   position: absolute;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-summary .aboutme-summary-p {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .aboutme-summary-p {
   top: 20%;
   left: 4%;
   position: absolute;
   width: 90%;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-summary .aboutme-summary-p .aboutme-summary-wordhype {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .aboutme-summary-p .aboutme-summary-wordhype {
   color: var(--primary-color);
 }
 
-.aboutme-container .aboutme-right {
+.aboutme-container .aboutme-content-conatiner .aboutme-right {
   min-height: 604px;
   position: relative;
 }
 
-.aboutme-container .aboutme-right .aboutme-folder-container {
+.aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -390,16 +390,17 @@
           flex-direction: column;
 }
 
-.aboutme-container .aboutme-right .aboutme-folder-container .aboutme-foldericon {
+.aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-foldericon {
   height: 70%;
   margin: auto;
 }
 
-.aboutme-container .aboutme-right .aboutme-folder-container .folder-cap {
+.aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .folder-cap {
+  font-size: 1vw;
   margin: -10% auto 0 auto;
 }
 
-.aboutme-container .aboutme-right .aboutme-folder-container .aboutme-download-button {
+.aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-download-button {
   margin-right: 10%;
   background-color: white;
   border: 1px var(--primary-color) solid;
@@ -407,7 +408,7 @@
   height: 25%;
   color: black;
   font-family: Michroma;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   letter-spacing: .15em;
   text-transform: uppercase;
   -webkit-box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);

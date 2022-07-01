@@ -325,10 +325,6 @@ $font-family: 'Michroma';
                 }
 
             }
-        }
-                
-
-
             .aboutme-holder {
                 height: 100%;
                 width: 100%;
@@ -411,8 +407,8 @@ $font-family: 'Michroma';
 
             }
 
-
         }
+                
 
         .aboutme-right {
             min-height: 604px;
@@ -441,6 +437,7 @@ $font-family: 'Michroma';
                 }
 
                 .folder-cap {
+                    font-size: 1vw;
                     margin: -10% auto 0 auto;
                     
                 }
@@ -459,7 +456,7 @@ $font-family: 'Michroma';
                     color: black;
                     font-family:Michroma;
 
-                    font-size: 1.5em;
+                    font-size: 1.5vw;
                     letter-spacing: .15em;
 
                     text-transform: uppercase;
@@ -472,4 +469,8 @@ $font-family: 'Michroma';
 
                 
         }
+
+        }
+
+        
 }
