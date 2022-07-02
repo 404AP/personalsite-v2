@@ -9,7 +9,6 @@
 
 .contact-container {
   height: 100vh;
-  background-color: yellow;
   min-height: 750px;
   font-family: Michroma;
 }
@@ -23,5 +22,40 @@
   font-weight: normal;
   letter-spacing: .1em;
   text-shadow: 7px 8px rgba(0, 0, 0, 0.137);
+}
+
+.contact-container .contact-content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40vw 60vw;
+      grid-template-columns: 40vw 60vw;
+  -ms-grid-rows: 80%;
+      grid-template-rows: 80%;
+  overflow: hidden;
+}
+
+.contact-container .contact-content-container .contact-left {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+.contact-container .contact-content-container .contact-left .contact-form-container {
+  background-color: blueviolet;
+  width: 60%;
+  height: 70%;
+  margin: 5vh auto 0 auto;
+  border: black 3px solid;
+}
+
+.contact-container .contact-content-container .contact-right {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-container .contact-content-container .contact-right img {
+  height: 100%;
+  position: relative;
+  right: -10%;
 }
 /*# sourceMappingURL=Contact.css.map */

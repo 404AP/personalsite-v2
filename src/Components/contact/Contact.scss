@@ -11,9 +11,10 @@
 
 .contact-container {
     height: 100vh;
-    background-color: yellow;
+    //background-color: yellow;
     min-height: 750px;
     font-family: Michroma;
+    
 
 
     .contact-header {
@@ -25,5 +26,38 @@
         font-weight: normal;
         letter-spacing: .1em;
         text-shadow:7px 8px rgba(0, 0, 0, 0.137);
+    }
+
+    .contact-content-container {
+      display: grid;
+      grid-template-columns: 40vw 60vw;
+      grid-template-rows: 80%;
+      overflow: hidden;
+
+
+      .contact-left {
+        height: 100%;
+        width: 100%;
+        background-color: aqua;
+        .contact-form-container {
+          background-color: blueviolet;
+          width: 60%;
+          height: 70%;
+          margin: 5vh auto 0 auto;
+          border: black 3px solid;
+        }
+      }
+
+      .contact-right {
+        height: 100%;
+        width: 100%;
+
+        img {
+          height: 100%;
+          position: relative;
+          right: -10%;
+        }
+
+      }
     }
 }

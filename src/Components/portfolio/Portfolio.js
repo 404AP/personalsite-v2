@@ -65,7 +65,7 @@ export default class Portfolio extends Component {
                     <h2 className="portfolio-projects-header">Projects</h2>
                     <div className='project-list-container'>
                         <ul className="project-examples-list">
-                            <Projects settingCurrentItem={this.setCurrentItem} items={this.state.items}></Projects>
+                            <Projects settingCurrentItem={this.setCurrentItem} currentItem={this.state.currentItem} items={this.state.items}></Projects>
                         </ul>
                     </div>                
                 <p className="contact-me-cta">Interested in Working Together? <br /> <span className='portfolio-contactme-wordhype'>Contact Me</span></p>

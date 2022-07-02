@@ -10,17 +10,112 @@
 .project-icon-container {
   width: 100%;
   height: 100%;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
 .project-icon-container .icons {
   width: 100%;
-  height: 80%;
-  background-size: 100%;
+  height: 100%;
+  background-size: cover;
   background-color: white;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: solid black 2px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.project-icon-container .project-title-overlay {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 0, 0, 0)), color-stop(99%, black));
+  background-image: linear-gradient(rgba(255, 0, 0, 0) 1%, black 99%);
+}
+
+.project-icon-container .project-title {
+  position: absolute;
+  padding: 1% 3%;
+  height: 20%;
+  width: 100%;
+  z-index: 3;
+  bottom: 0px;
+  color: white;
+  font-size: .9em;
+}
+
+@-webkit-keyframes project-title-overlay-change {
+  0% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes project-title-overlay-change {
+  0% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes project-title-icon-change {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px var(--primary-color);
+            box-shadow: 0px 0px 0px 0px var(--primary-color);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 5px var(--primary-color);
+            box-shadow: 0px 0px 20px 5px var(--primary-color);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 40px 10px var(--primary-color);
+            box-shadow: 0px 0px 40px 10px var(--primary-color);
+  }
+}
+
+@keyframes project-title-icon-change {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px var(--primary-color);
+            box-shadow: 0px 0px 0px 0px var(--primary-color);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 5px var(--primary-color);
+            box-shadow: 0px 0px 20px 5px var(--primary-color);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 40px 10px var(--primary-color);
+            box-shadow: 0px 0px 40px 10px var(--primary-color);
+  }
+}
+
+.selected {
+  -webkit-box-shadow: 0px 0px 40px 10px var(--primary-color);
+          box-shadow: 0px 0px 40px 10px var(--primary-color);
+  -webkit-animation-name: project-title-icon-change;
+          animation-name: project-title-icon-change;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.selected .project-title-overlay {
+  -webkit-animation-name: project-title-overlay-change;
+          animation-name: project-title-overlay-change;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  background-image: linear-gradient(175deg, rgba(255, 0, 0, 0) 70%, var(--primary-color) 30%);
+  opacity: 100%;
 }
 /*# sourceMappingURL=Projects.css.map */
