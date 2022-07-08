@@ -13,7 +13,7 @@ $font-family: 'Michroma';
 
 .aboutme-container {
     height: 100vh;
-    min-height: 760px;
+    // min-height: 760px;
     background-color: rgba(103, 186, 67, 0.384);
     font-family: Michroma;
     background-image: url("../../Assets/self.png");
@@ -34,14 +34,15 @@ $font-family: 'Michroma';
         font-size: 5.5em;
         font-weight: normal;
         letter-spacing: .1em;
-        text-shadow:7px 8px rgba(0, 0, 0, 0.137);
+        text-shadow:1vmin 1vmin rgba(0, 0, 0, 0.137);
     }
 
     .aboutme-content-conatiner {
-        min-height: 604px;
+        //min-height: 604px;
         // background-color: #c0392b;
         display: grid;
         grid-template-columns: 80vw 20vw;
+        grid-template-rows: 75vh;
         padding: 0;
         margin: 0;
         
@@ -49,8 +50,8 @@ $font-family: 'Michroma';
 
         .aboutme-left {
             
-            height: 80vh;
-            min-height: 604px;
+            
+            // min-height: 604px;
             // background-color: aqua;
             width: 75vw;
             display: grid;
@@ -60,10 +61,10 @@ $font-family: 'Michroma';
             grid-row-gap: 1vw;
             margin-left: 3vw;
             padding: 0;
-
+            font-size: 1.8vmin;
             
             .aboutme-skills {
-                font-size: 90%;                
+                                
                 height: 100%;
                 width: 100%;
                 background-color: orchid;
@@ -332,7 +333,7 @@ $font-family: 'Michroma';
             }
 
             .aboutme-interest {
-                font-size: 90%;
+                //font-size: 90%;
                 height: 100%;
                 width: 100%;
                 background-color: orchid;
@@ -365,10 +366,10 @@ $font-family: 'Michroma';
             }
 
             .aboutme-summary {
-                font-size: 90%;                
+               // font-size: 90%;                
                 height: 100%;
                 width: 100%;
-                background-color: orchid;
+                //background-color: orchid;
                 overflow: hidden;
                 position: relative;
 
@@ -411,7 +412,8 @@ $font-family: 'Michroma';
                 
 
         .aboutme-right {
-            min-height: 604px;
+            
+            //min-height: 604px;
             // background-color: purple;
             position: relative;
 
@@ -437,7 +439,7 @@ $font-family: 'Michroma';
                 }
 
                 .folder-cap {
-                    font-size: 1vw;
+                    font-size: 1.5vmin;
                     margin: -10% auto 0 auto;
                     
                 }
@@ -445,13 +447,13 @@ $font-family: 'Michroma';
 
 
                 .aboutme-download-button {
-                    margin-right:10%;
+                    margin: auto 10% 0px 0px;
 
                     background-color:white;
                     border:1px var(--primary-color) solid;
 
                     width:90%;
-                    height: 25%;
+                    height: 12vh;
 
                     color: black;
                     font-family:Michroma;
@@ -473,4 +475,183 @@ $font-family: 'Michroma';
         }
 
         
+}
+
+
+@media only screen and (max-width: 1249px) {
+
+    .aboutme-container {
+        width: 100vw;
+        background-position-x: 50%;
+        background-position-y: 30%;
+        background-size: calc(750px - 5vw);
+        border-bottom: solid black 5px;
+    
+
+            .aboutme-header {
+                font-size: 7.5vmin;
+            }
+
+
+            .aboutme-content-conatiner {
+                display: grid;
+                width: 100vw;
+                height: 75vh;
+                grid-template-columns: 90vw;
+                grid-template-rows: 75% 25%;
+                row-gap: 0;
+                column-gap: 0;
+                
+                padding: 0;
+                margin: 0;
+
+                .aboutme-left {
+                    grid-template-columns: 110%;
+                    grid-template-rows: 40% 60%;
+                    grid-column-gap: 1vw;
+                    grid-row-gap: 1vw;
+                    margin: auto;
+                    padding: 0;
+
+
+                    .aboutme-skills {
+                        display: none;
+                        
+                    }
+
+                    .aboutme-interest {
+                        display: none;
+                    }
+
+
+                    .aboutme-summary {
+                        font-size: calc(1.2vh + .5vw);
+                        height: calc(500px - 18.5vw);
+                        width: 100%;
+
+                    }
+
+                    
+                }
+
+                .aboutme-right {
+
+                    position:relative;
+                    bottom: calc(23.5px + 16vw);
+                    right: -45vw;
+                    width: 52vw;
+                    height: 50vh;
+
+                    .aboutme-folder-container {
+                        display: flex;
+                        height: calc(277px - 1vw);
+
+
+                        .aboutme-foldericon {
+                            margin: auto 0px 3vh auto;
+                            
+                        }
+                        .folder-cap {
+                            font-size: 2.5vmin;
+                        }
+                        .aboutme-download-button{
+                            font-size: calc(10.69px + .8vw);
+                        }
+                    }
+
+                }
+
+            } 
+
+
+
+
+
+    }
+
+
+}
+
+@media only screen and (max-width:500px) {
+    .aboutme-container {
+        // background-position-x: -12%;
+        // background-position-y: 28%;
+        background-size: 120%;
+        
+
+        .aboutme-header {
+            margin: 10vw 1vw;
+            font-size: 11vmin;
+        }
+
+        .aboutme-content-conatiner {
+            display: grid;
+            width: 100vw;
+            height: 75vh;
+            grid-template-columns: 90vw;
+            row-gap: 0;
+            column-gap: 0;
+            
+            padding: 0;
+            margin: 0;
+
+            .aboutme-left {
+                grid-template-columns: 110%;
+                grid-template-rows: 40% 60%;
+                grid-column-gap: 1vw;
+                grid-row-gap: 1vw;
+                margin: auto;
+                padding: 0;
+
+
+                .aboutme-skills {
+                    display: none;
+                    
+                }
+
+                .aboutme-interest {
+                    display: none;
+                }
+
+
+                .aboutme-summary {
+                    font-size: calc(1.2vh + .05vw);
+                    height: calc(375px - 30vw);
+                    width: 100%;
+
+                }
+
+                
+            }
+
+            .aboutme-right {
+                position: relative;
+                bottom: calc(85.5px + 16vh);
+                right: -45vw;
+                width: 55vw;
+                height: 42vh;
+
+                .aboutme-folder-container {
+                    height: calc(220px - 15vw);
+
+                    .aboutme-foldericon {
+                        margin: auto auto 2vh auto;
+                        size: 50%;
+                    }
+
+                }
+                .folder-cap {
+                    font-size: 2.5vmin;
+                }
+            }
+
+
+
+
+
+    }
+
+
+}
+
 }

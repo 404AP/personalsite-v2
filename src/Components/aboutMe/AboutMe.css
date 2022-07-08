@@ -9,7 +9,6 @@
 
 .aboutme-container {
   height: 100vh;
-  min-height: 760px;
   background-color: rgba(103, 186, 67, 0.384);
   font-family: Michroma;
   background-image: url("../../Assets/self.png");
@@ -28,22 +27,21 @@
   font-size: 5.5em;
   font-weight: normal;
   letter-spacing: .1em;
-  text-shadow: 7px 8px rgba(0, 0, 0, 0.137);
+  text-shadow: 1vmin 1vmin rgba(0, 0, 0, 0.137);
 }
 
 .aboutme-container .aboutme-content-conatiner {
-  min-height: 604px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80vw 20vw;
       grid-template-columns: 80vw 20vw;
+  -ms-grid-rows: 75vh;
+      grid-template-rows: 75vh;
   padding: 0;
   margin: 0;
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left {
-  height: 80vh;
-  min-height: 604px;
   width: 75vw;
   display: -ms-grid;
   display: grid;
@@ -55,10 +53,10 @@
   grid-row-gap: 1vw;
   margin-left: 3vw;
   padding: 0;
+  font-size: 1.8vmin;
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills {
-  font-size: 90%;
   height: 100%;
   width: 100%;
   background-color: orchid;
@@ -303,7 +301,6 @@
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest {
-  font-size: 90%;
   height: 100%;
   width: 100%;
   background-color: orchid;
@@ -332,10 +329,8 @@
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
-  font-size: 90%;
   height: 100%;
   width: 100%;
-  background-color: orchid;
   overflow: hidden;
   position: relative;
 }
@@ -366,7 +361,6 @@
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-right {
-  min-height: 604px;
   position: relative;
 }
 
@@ -396,16 +390,16 @@
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .folder-cap {
-  font-size: 1vw;
+  font-size: 1.5vmin;
   margin: -10% auto 0 auto;
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-download-button {
-  margin-right: 10%;
+  margin: auto 10% 0px 0px;
   background-color: white;
   border: 1px var(--primary-color) solid;
   width: 90%;
-  height: 25%;
+  height: 12vh;
   color: black;
   font-family: Michroma;
   font-size: 1.5vw;
@@ -413,5 +407,137 @@
   text-transform: uppercase;
   -webkit-box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1249px) {
+  .aboutme-container {
+    width: 100vw;
+    background-position-x: 50%;
+    background-position-y: 30%;
+    background-size: calc(750px - 5vw);
+    border-bottom: solid black 5px;
+  }
+  .aboutme-container .aboutme-header {
+    font-size: 7.5vmin;
+  }
+  .aboutme-container .aboutme-content-conatiner {
+    display: -ms-grid;
+    display: grid;
+    width: 100vw;
+    height: 75vh;
+    -ms-grid-columns: 90vw;
+        grid-template-columns: 90vw;
+    -ms-grid-rows: 75% 25%;
+        grid-template-rows: 75% 25%;
+    row-gap: 0;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left {
+    -ms-grid-columns: 110%;
+        grid-template-columns: 110%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    margin: auto;
+    padding: 0;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills {
+    display: none;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest {
+    display: none;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
+    font-size: calc(1.2vh + .5vw);
+    height: calc(500px - 18.5vw);
+    width: 100%;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right {
+    position: relative;
+    bottom: calc(23.5px + 16vw);
+    right: -45vw;
+    width: 52vw;
+    height: 50vh;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(277px - 1vw);
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-foldericon {
+    margin: auto 0px 3vh auto;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .folder-cap {
+    font-size: 2.5vmin;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-download-button {
+    font-size: calc(10.69px + .8vw);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutme-container {
+    background-size: 120%;
+  }
+  .aboutme-container .aboutme-header {
+    margin: 10vw 1vw;
+    font-size: 11vmin;
+  }
+  .aboutme-container .aboutme-content-conatiner {
+    display: -ms-grid;
+    display: grid;
+    width: 100vw;
+    height: 75vh;
+    -ms-grid-columns: 90vw;
+        grid-template-columns: 90vw;
+    row-gap: 0;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left {
+    -ms-grid-columns: 110%;
+        grid-template-columns: 110%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    margin: auto;
+    padding: 0;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills {
+    display: none;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest {
+    display: none;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
+    font-size: calc(1.2vh + .05vw);
+    height: calc(375px - 30vw);
+    width: 100%;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right {
+    position: relative;
+    bottom: calc(85.5px + 16vh);
+    right: -45vw;
+    width: 55vw;
+    height: 42vh;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container {
+    height: calc(220px - 15vw);
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-foldericon {
+    margin: auto auto 2vh auto;
+    size: 50%;
+  }
+  .aboutme-container .aboutme-content-conatiner .aboutme-right .folder-cap {
+    font-size: 2.5vmin;
+  }
 }
 /*# sourceMappingURL=AboutMe.css.map */

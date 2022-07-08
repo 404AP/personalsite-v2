@@ -13,6 +13,7 @@
   overflow: hidden;
   position: relative;
   z-index: 0;
+  cursor: pointer;
 }
 
 .project-icon-container .icons {
@@ -23,7 +24,6 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: solid black 2px;
-  cursor: pointer;
   position: relative;
   z-index: 1;
 }
@@ -46,7 +46,7 @@
   z-index: 3;
   bottom: 0px;
   color: white;
-  font-size: .9em;
+  font-size: calc(12px + .2vmax);
 }
 
 @-webkit-keyframes project-title-overlay-change {
@@ -115,7 +115,7 @@
           animation-duration: .5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  background-image: linear-gradient(175deg, rgba(255, 0, 0, 0) 70%, var(--primary-color) 30%);
+  background-image: linear-gradient(175deg, rgba(255, 0, 0, 0) 55%, var(--primary-color) 30%);
   opacity: 100%;
 }
 /*# sourceMappingURL=Projects.css.map */

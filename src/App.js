@@ -13,11 +13,6 @@ function App() {
       <AboutMe/>
       <Portfolio/>
       <Contact/>
-      <footer className="app-footer">
-        
-        
-        </footer>
-
     </div>
   );
 }
