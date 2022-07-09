@@ -118,6 +118,7 @@
     background-image: none !important;
     width: 100vw;
     height: 100vh;
+    overflow: visible;
   }
   .portfolio-container .portfolio-header {
     margin: 2vw auto 0vw 3vw;
@@ -134,10 +135,7 @@
   .portfolio-container .portfolio-content-container .portfolio-left {
     height: 25%;
     width: 100%;
-    background-image: url("../../Assets/eyes.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: 1% 0;
+    margin-bottom: 5%;
     position: relative;
   }
   .portfolio-container .portfolio-content-container .portfolio-left .portfolio-projects-header {
@@ -166,7 +164,10 @@
     display: none;
   }
   .portfolio-container .portfolio-content-container .portfolio-left img {
-    display: none;
+    display: block;
+    height: auto;
+    width: calc(20% + 1vmin);
+    float: right;
   }
   .portfolio-container .portfolio-content-container .portfolio-right {
     display: -webkit-box;

@@ -7,7 +7,7 @@ import powershellIMG from '../../Assets/powershell_icon.png'
 import grindsetglobalThumbIMG from '../../Assets/grindsetglobal_thumb.png'
 import speedyIMG from '../../Assets/previewSpeedy.png'
 import ggIMG from '../../Assets/previewGG.png'
-import { set } from 'react-hook-form'
+
 // import speedyIMG from '../../Assets/speedy.png'
 
 export default class Portfolio extends Component {

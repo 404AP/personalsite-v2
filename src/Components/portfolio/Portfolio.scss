@@ -140,6 +140,7 @@
         background-image: none !important;
         width: 100vw;
         height: 100vh;
+        overflow: visible;
 
         .portfolio-header {
             
@@ -156,10 +157,8 @@
             .portfolio-left {
                 height: 25%;
                 width: 100%;
-                background-image: url('../../Assets/eyes.png');
-                background-size: 50%;
-                background-repeat: no-repeat;
-                background-position: 1% 0;
+                margin-bottom: 5%;
+                
                 // background-color: aquamarine;
                 position: relative;
 
@@ -192,7 +191,10 @@
                 }
 
                 img {
-                    display: none;
+                    display: block;
+                    height: auto;
+                    width: calc(20% + 1vmin);
+                    float: right;
                 }
 
 

@@ -12,7 +12,7 @@ import './AboutMe.css'
 export default class AboutMe extends Component {
   render() {
     return (
-      <div className="aboutme-container">
+      <div className="aboutme-container" id="aboutme-container">
           <h1 className="aboutme-header">About Me</h1>
             <div className="aboutme-content-conatiner">
                 <div className="aboutme-left">

@@ -1,0 +1,125 @@
+
+
+
+
+
+$font-family: 'Michroma';
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar-container.isClosed{
+    right: 0;
+    margin: auto .5%;
+    top: 15%;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    width: calc(85px + 1vw);
+    height: 10vh;
+    // background-color: red;
+    
+
+
+    .nav-icon-closed {
+        height: 100%;
+        width: calc(85px + 1vw);
+        margin-right: 0px;
+        .open {
+            margin-left: 20%;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .not-visible {
+        display: none;
+    }
+    
+}
+
+.navbar-container.isOpen{
+    right: 0;
+    margin: auto 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    width: 45vw;
+    height: 100vh;
+    background-color: black;
+    
+
+
+    .nav-icon-open {
+        height: 10%;
+        width: calc(85px + 1vw);
+        margin-left: 35vw;
+        .close {
+            margin-right: 20%;
+            height: auto;
+            max-height: 104px;
+            width: 10vw;
+            color: var(--primary-color);
+        }
+    }
+
+    .not-visible {
+        display: none;
+    }
+
+    .drawer {
+        position: absolute;
+        margin: 25vh 10% auto 10%;
+        height: 70%;
+        text-align: center;
+        width: 80%;
+        // background-color: green;
+        display: block;
+        .menu-options {
+          list-style: none;
+          height: 80%;
+          padding: 10% auto 5% auto; 
+          .menu-item {
+            margin: 5% auto;
+            .link {
+                font-size: calc(18px + .4vmax);
+                font-family: Michroma;
+                text-decoration: none;
+                color: white;
+            } 
+          }
+          
+        }
+        .social-links {
+            height: 20%;
+            .text {
+                font-size: calc(14px + .2vmax);
+                font-family: Michroma;
+                text-decoration: none;
+                color: white;
+            }
+            a {
+                .linkedin {
+                    height: 40%;
+                    width: auto;
+                    color: white;
+                }
+                .github {
+                    height: 40%;
+                    width: auto; 
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}
+
+

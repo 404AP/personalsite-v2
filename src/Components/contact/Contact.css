@@ -42,24 +42,26 @@
 }
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top {
-  background-color: rgba(128, 128, 128, 0.407);
+  background-color: rgba(128, 128, 128, 0.498);
   width: 60%;
-  height: 65%;
+  height: 70%;
   margin: 5vh auto 0 auto;
   border: black 3px solid;
   padding: 1%;
-  font-size: 1.2vw;
+  font-size: calc(14px + .2vmax);
 }
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .name-input {
   width: 100%;
-  font-size: 1.75vw;
+  height: 10%;
+  font-size: calc(27px + .2vmax);
   margin: 5% auto;
 }
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .email-input {
+  height: 10%;
   width: 100%;
-  font-size: 1.75vw;
+  font-size: calc(27px + .2vmax);
   margin: 5% auto;
 }
 
@@ -70,6 +72,7 @@
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .contact-radio-buttons input {
   margin: 3% auto;
+  font-size: calc(14px + .2vmax);
 }
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .contact-radio-buttons .contact-option-label {
@@ -82,10 +85,11 @@
   height: 6vh;
   font-family: Michroma;
   font-weight: 500;
-  font-size: 1.5vw;
+  font-size: calc(14px + .2vmax);
   letter-spacing: .15em;
   color: white;
   background-color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .contact-container .contact-content-container .contact-right {
@@ -99,8 +103,13 @@
 }
 
 @media only screen and (max-width: 1249px) {
+  .contact-container {
+    background-image: url("../../Assets/world.png");
+    background-repeat: no-repeat;
+    background-position: 0 220px;
+  }
   .contact-container .contact-header {
-    margin: 8vw 3vw;
+    margin: 0 auto 8vh 3vw;
     font-size: 9vmin;
   }
   .contact-container .contact-content-container {
@@ -113,28 +122,44 @@
     overflow: hidden;
     margin: 0px 0px 0px 5%;
   }
-  .contact-container .contact-content-container .contact-left {
-    background-color: pink;
-  }
   .contact-container .contact-content-container .contact-left .contact-form-container {
     margin: 0px 0px 0px 0px;
     padding: 0px;
-    background-color: orange;
     height: 100%;
   }
   .contact-container .contact-content-container .contact-left .contact-form-container form {
     height: 100%;
   }
   .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-top {
+    background-color: rgba(128, 128, 128, 0.798);
     margin: 0px auto;
+    width: calc(403px + 6vmax);
     height: 85%;
   }
   .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-bottom {
     width: 100%;
     height: 15%;
   }
+  .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-bottom input {
+    display: block;
+    margin: 1vh auto;
+    width: calc(403px + 6vmax);
+  }
   .contact-container .contact-content-container .contact-right {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-container .contact-header {
+    margin: 0 auto 8vh 3vw;
+    font-size: 12vmin;
+  }
+  .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-top {
+    width: 100%;
+  }
+  .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-bottom input {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Contact.css.map */

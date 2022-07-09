@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {HashLink as Link} from 'react-router-hash-link';
 import NodeImage from "../../Assets/node.png"
 import VercelImage from "../../Assets/vercel.svg"
 import ReactImage from "../../Assets/react.png"
@@ -65,13 +66,15 @@ export default class HeroSection extends Component {
                                 <br></br>
                             <div className="hero-right-button-container">
                                     <button className="cta-hero-right">
-                                        Enter
-                                        </button>
-                                        <br></br>
+                                        <Link className="link" to='#aboutme-container' smooth>
+                                            Enter
+                                        </Link>    
+                                    </button>
+                                    <br></br>
                                     <p className="cta-hero-right-subtext">
                                         Press the Button or Swipe Down
                                         </p>
-                                </div>
+                            </div>
                     </div>
                 </div>
     </div>
