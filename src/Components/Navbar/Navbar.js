@@ -1,34 +1,42 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { RiMenu3Line, RiCloseFill, RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri/";
 import {HashLink as Link} from "react-router-hash-link";
 import './Navbar.css';
 
-export default class Navbar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          navbar: false
-        }
-        this.toggleNav = this.toggleNav.bind(this);
-    }
 
-    toggleNav() {
-        let value = !(this.state.navbar);
-        this.setState({
-            navbar: value
-        });
-    }
-  render() {
-    return (
-      <div className={"navbar-container " + (this.state.navbar ? 'isOpen': 'isClosed')}>
+export default function Navbar() {
+
+    const[navbar, setNav] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const handleToggle = () => setNav((navbar) => !navbar);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        
+        setScrollPosition((scrollPosition) => position );
+      };
+
+    useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+    }, []);
+
+
+
+  return (
+          <div className={"navbar-container " + (navbar ? 'isOpen': 'isClosed')}>
         <div className="nav-icon-closed">
-            <RiMenu3Line onClick={this.toggleNav} className={'open ' + (this.state.navbar ? 'not-visible': '')} style={{color: '#67ba43'}}/>
+            <RiMenu3Line onClick={handleToggle} className={'open ' + (navbar ? 'not-visible': '')} style={{color: '#67ba43'}}/>
         </div>
         <div className="nav-icon-open">
-            <RiCloseFill onClick={this.toggleNav} className={'close ' + (this.state.navbar ? '' : 'not-visible') }/>
+            <RiCloseFill onClick={handleToggle} className={'close ' + (navbar ? '' : 'not-visible') }/>
         </div>
-        <div className={"drawer " + (this.state.navbar ? '' : 'not-visible')}>
+        <div className={"drawer " + (navbar ? '' : 'not-visible')}>
             <ul className="menu-options">
+                <p className="t" style={{color: 'white'}}> {scrollPosition} </p>
                 <li className="menu-item">
                     <Link to="#" className='link' smooth>
                         Home
@@ -66,6 +74,6 @@ export default class Navbar extends Component {
         
 
       </div>
-    )
-  }
+  )
 }
+
