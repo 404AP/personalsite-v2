@@ -7,6 +7,7 @@ import powershellIMG from '../../Assets/powershell_icon.png'
 import grindsetglobalThumbIMG from '../../Assets/grindsetglobal_thumb.png'
 import speedyIMG from '../../Assets/previewSpeedy.png'
 import ggIMG from '../../Assets/previewGG.png'
+import { HashLink as Link } from 'react-router-hash-link'
 
 // import speedyIMG from '../../Assets/speedy.png'
 
@@ -58,17 +59,17 @@ export default class Portfolio extends Component {
 
   render() {
     return (
-        <div style={{backgroundImage: 'url(' + WindowIMG + ')'}} className="portfolio-container">
+        <div style={{backgroundImage: 'url(' + WindowIMG + ')'}} className="portfolio-container" id="portfolio">
             <h1 className="portfolio-header"> Portfolio</h1>
             <div className="portfolio-content-container">
                 <div className="portfolio-left">
-                    <h2 className="portfolio-projects-header">Projects</h2>
+                    <h2 className="portfolio-projects-header">Projects / Achievements</h2>
                     <div className='project-list-container'>
                         <ul className="project-examples-list">
                             <Projects settingCurrentItem={this.setCurrentItem} currentItem={this.state.currentItem} items={this.state.items}></Projects>
                         </ul>
                     </div>                
-                <p className="contact-me-cta">Interested in Working Together? <br /> <span className='portfolio-contactme-wordhype'>Contact Me</span></p>
+                <p className="contact-me-cta">Interested in Working Together? <br /> <Link to="#contactMe" className='portfolio-contactme-wordhype'>Contact Me</Link></p>
                 <img src={eyesIMG} alt="alvanprice.com" className="portfolio-eyes" />            
                 </div>
             <div  className="portfolio-right">

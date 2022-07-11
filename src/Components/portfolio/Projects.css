@@ -47,6 +47,11 @@
   bottom: 0px;
   color: white;
   font-size: calc(12px + .2vmax);
+  margin-bottom: 15px;
+}
+
+.project-icon-container:hover .icons {
+  border-color: gold;
 }
 
 @-webkit-keyframes project-title-overlay-change {

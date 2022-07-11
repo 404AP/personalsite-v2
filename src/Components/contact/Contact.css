@@ -73,6 +73,7 @@
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .contact-radio-buttons input {
   margin: 3% auto;
   font-size: calc(14px + .2vmax);
+  accent-color: var(--primary-color);
 }
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .contact-radio-buttons .contact-option-label {
@@ -89,7 +90,14 @@
   letter-spacing: .15em;
   color: white;
   background-color: var(--primary-color);
+  border: white 1px solid;
   text-transform: uppercase;
+}
+
+.contact-container .contact-content-container .contact-left .contact-form-container .contact-form-bottom input:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border: var(--primary-color) 1px solid;
 }
 
 .contact-container .contact-content-container .contact-right {

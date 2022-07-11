@@ -32,6 +32,10 @@
   width: auto;
 }
 
+.navbar-container.isClosed .nav-icon-closed .open:hover {
+  height: 110%;
+}
+
 .navbar-container.isClosed .not-visible {
   display: none;
 }
@@ -58,10 +62,14 @@
 
 .navbar-container.isOpen .nav-icon-open .close {
   margin-right: 20%;
-  height: auto;
-  max-height: 104px;
+  height: 100%;
   width: 10vw;
   color: var(--primary-color);
+}
+
+.navbar-container.isOpen .nav-icon-open .close:hover {
+  height: 110%;
+  color: white;
 }
 
 .navbar-container.isOpen .not-visible {
@@ -94,6 +102,10 @@
   color: white;
 }
 
+.navbar-container.isOpen .drawer .menu-options .menu-item:hover .link {
+  color: var(--primary-color);
+}
+
 .navbar-container.isOpen .drawer .social-links {
   height: 20%;
 }
@@ -115,5 +127,21 @@
   height: 40%;
   width: auto;
   color: white;
+}
+
+.navbar-container.isOpen .drawer .social-links a .linkedin:hover {
+  height: 42%;
+  width: auto;
+  color: var(--primary-color);
+}
+
+.navbar-container.isOpen .drawer .social-links a .github:hover {
+  height: 42%;
+  width: auto;
+  color: var(--primary-color);
+}
+
+.navbar-container.not-visible {
+  display: none;
 }
 /*# sourceMappingURL=Navbar.css.map */

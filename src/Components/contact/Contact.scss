@@ -78,7 +78,10 @@
               input {
                 margin: 3% auto;
                 font-size: calc(14px + .2vmax);
+                accent-color: var(--primary-color);
+              
               }
+              
 
               .contact-option-label {
                 margin: auto 2%;
@@ -98,8 +101,15 @@
               letter-spacing: .15em;
               color: white;
               background-color: var(--primary-color);
+              border: white 1px solid;
               text-transform: uppercase;
               
+            }
+
+            input:hover {
+              color: var(--primary-color);
+              background-color: white;
+              border: var(--primary-color) 1px solid;
             }
           
           }

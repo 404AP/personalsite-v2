@@ -36,6 +36,10 @@ $font-family: 'Michroma';
             height: 100%;
             width: auto;
         }
+
+        .open:hover {
+            height: 110%;
+        }
     }
 
     .not-visible {
@@ -63,10 +67,15 @@ $font-family: 'Michroma';
         margin-left: 35vw;
         .close {
             margin-right: 20%;
-            height: auto;
-            max-height: 104px;
+            height: 100%;
+            //max-height: 104px;
             width: 10vw;
             color: var(--primary-color);
+        }
+
+        .close:hover {
+            height: 110%;
+            color: white;
         }
     }
 
@@ -95,6 +104,12 @@ $font-family: 'Michroma';
                 color: white;
             } 
           }
+
+          .menu-item:hover {
+            .link {
+                color: var(--primary-color);
+            }
+          }
           
         }
         .social-links {
@@ -118,8 +133,27 @@ $font-family: 'Michroma';
                 }
             }
         }
+
+        .social-links {
+            a {
+                .linkedin:hover {
+                    height: 42%;
+                    width: auto;
+                    color: var(--primary-color);
+                }
+                .github:hover {
+                    height: 42%;
+                    width: auto; 
+                    color: var(--primary-color);
+                }
+            }
+        }
     }
     
+}
+
+.navbar-container.not-visible {
+    display: none;
 }
 
 

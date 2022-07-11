@@ -159,10 +159,14 @@ $font-family: 'Michroma';
                                 // background-color: #3c2279;
 
                                 .value-1 {
-
                                     height: 100%;
-                                    width: 80%;
-                                    background-color: #27ae60;
+                                    width: 1%;
+                                    background-color: #27ae60; 
+                                    transition: width 2s linear;
+                                }
+
+                                .value-1.animated{
+                                    width: 90%;
                                 }
                             }
                         }
@@ -450,7 +454,7 @@ $font-family: 'Michroma';
                     margin: auto 10% 0px 0px;
 
                     background-color:white;
-                    border:1px var(--primary-color) solid;
+                    border:1px white solid;
 
                     width:90%;
                     height: 12vh;
@@ -463,6 +467,11 @@ $font-family: 'Michroma';
 
                     text-transform: uppercase;
                     box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
+                }
+
+                .aboutme-download-button:hover {
+                    background-color: var(--primary-color);
+                    color: white;
                 }
 
 

@@ -150,8 +150,14 @@
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js .progressbar-title .percent .value-1 {
   height: 100%;
-  width: 80%;
+  width: 1%;
   background-color: #27ae60;
+  -webkit-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.js .progressbar-title .percent .value-1.animated {
+  width: 90%;
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.python {
@@ -397,7 +403,7 @@
 .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-download-button {
   margin: auto 10% 0px 0px;
   background-color: white;
-  border: 1px var(--primary-color) solid;
+  border: 1px white solid;
   width: 90%;
   height: 12vh;
   color: black;
@@ -407,6 +413,11 @@
   text-transform: uppercase;
   -webkit-box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5);
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-download-button:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 @media only screen and (max-width: 1249px) {

@@ -1,0 +1,68 @@
+/* Adding the fonts to the Project */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url("https://use.typekit.net/pro2zmf.css");
+
+
+/* Decalring Global Vars for the color scheme */
+:root {
+
+  --primary-color: #67ba43;
+  --app-background:#F5F5F5;
+
+
+}
+
+
+
+.App {
+  background-image: url("Assets/siteBackground.png");
+  background-blend-mode:darken;
+  background-attachment: fixed;
+  background-color: #ffffff;
+  height: max-content;
+  display: grid;
+  overflow: hidden;
+  
+  
+} 
+
+.app-footer {
+  background-color: black;
+  height: 20vh;
+
+  .menu-container {
+    display: block;
+    
+    width: calc(355px +  1vw);
+    height: 80%;
+    // background-color: red;
+    margin: 1vh auto auto 1vw;
+
+    .menu-options{
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 10px auto;
+            list-style: none;
+            font-family: Michroma;
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            a:hover {
+                color: var(--primary-color);
+            }
+        }
+    }  
+  }
+  .thankyou {
+        font-family: Michroma;
+        height: 10%; 
+        text-align: center;
+        color: white;
+        width: 50%;
+        margin-left: 25%;
+    }
+}

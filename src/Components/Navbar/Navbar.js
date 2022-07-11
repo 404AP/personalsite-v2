@@ -8,6 +8,7 @@ export default function Navbar() {
 
     const[navbar, setNav] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [color,setColor] = useState("#67ba43");
 
     const handleToggle = () => setNav((navbar) => !navbar);
     const handleScroll = () => {
@@ -27,9 +28,9 @@ export default function Navbar() {
 
 
   return (
-          <div className={"navbar-container " + (navbar ? 'isOpen': 'isClosed')}>
+        <div className={"navbar-container " + (navbar ? 'isOpen': 'isClosed') + (scrollPosition > (0.75 * window.innerHeight) ? '' : ' not-visible')}>
         <div className="nav-icon-closed">
-            <RiMenu3Line onClick={handleToggle} className={'open ' + (navbar ? 'not-visible': '')} style={{color: '#67ba43'}}/>
+            <RiMenu3Line onClick={handleToggle} className={'open ' + (navbar ? 'not-visible': '')} style={{color: color}}/>
         </div>
         <div className="nav-icon-open">
             <RiCloseFill onClick={handleToggle} className={'close ' + (navbar ? '' : 'not-visible') }/>
@@ -43,17 +44,17 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li className="menu-item">
-                    <Link to="#" className='link' smooth>
+                    <Link to="#aboutMe" className='link' smooth>
                         About Me
                     </Link>
                 </li>
                 <li className="menu-item">
-                    <Link to="#" className='link' smooth>
+                    <Link to="#portfolio" className='link' smooth>
                         Portfolio
                     </Link>
                 </li>
                 <li className="menu-item">
-                    <Link to="#" className='link' smooth>
+                    <Link to="#contact" className='link' smooth>
                         Contact
                     </Link>
                 </li>

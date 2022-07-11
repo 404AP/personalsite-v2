@@ -75,6 +75,7 @@
 
 .portfolio-container .portfolio-content-container .portfolio-left .contact-me-cta .portfolio-contactme-wordhype {
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .portfolio-container .portfolio-content-container .portfolio-left img {
