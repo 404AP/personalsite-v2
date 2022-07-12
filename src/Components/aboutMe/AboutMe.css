@@ -53,7 +53,7 @@
   grid-row-gap: 1vw;
   margin-left: 3vw;
   padding: 0;
-  font-size: 1.8vmin;
+  font-size: calc(20px - 0.1vh - .1vw);
   font-weight: bold;
 }
 
@@ -404,7 +404,6 @@
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   position: relative;
 }
 
@@ -422,14 +421,23 @@
   position: absolute;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .aboutme-summary-p {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .wrapper {
+  height: 75%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
   top: 20%;
+  left: 4%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .wrapper .aboutme-summary-p {
   left: 4%;
   position: absolute;
   width: 90%;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .aboutme-summary-p .aboutme-summary-wordhype {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .wrapper .aboutme-summary-p .aboutme-summary-wordhype {
   color: var(--primary-color);
 }
 
@@ -542,7 +550,6 @@
     display: none;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
-    font-size: calc(1.2vh + .5vw);
     /* height: calc(500px - 18.5vw); */
     width: 100%;
   }
@@ -560,7 +567,7 @@
     height: calc(277px - 1vw);
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-foldericon {
-    margin: auto 0px 3vh auto;
+    margin: 2vh -5vh 1vh auto;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .folder-cap {
     font-size: 2.5vmin;
@@ -594,16 +601,15 @@
     margin: 0px;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-left {
-    height: 60vh;
-    width: 95vw;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 25% 75%;
-        grid-template-rows: 25% 75%;
+    -ms-grid-columns: 110%;
+        grid-template-columns: 110%;
+    -ms-grid-rows: 20% 60%;
+        grid-template-rows: 20% 60%;
     grid-column-gap: 1vw;
     grid-row-gap: 1vw;
     margin: auto;
     padding: 0;
+    height: 100%;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills {
     display: none;
@@ -613,7 +619,6 @@
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
     font-size: calc(4px + 1.2vh + .05vw);
-    height: calc(500px - 30vw);
     width: 100%;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right {

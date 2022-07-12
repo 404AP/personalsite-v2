@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { InView } from 'react-intersection-observer';
 import FolderIMG from "../../Assets/folder.png"
 import WindowIMG from "../../Assets/window.png"
+import {RiDownload2Line} from "react-icons/ri/";
 import './AboutMe.css'
 
 export default function AboutMe() {
@@ -98,23 +99,22 @@ export default function AboutMe() {
               <div className="aboutme-summary">
                   <img src={WindowIMG} alt="Skills Section" className="window-background-img" />
                   <h4 className="aboutme-skills-subheader summary"> Summary:</h4>
-                  <p className="aboutme-summary-p">
-                  I specialize in front-end development but I think it is important to be a Full Stack Engineer. Creating and Implementing UI's down to very fine details is very fulfilling, to say the least. Whenever I can find free time I like to work on small projects to help me get better at building and <span className="aboutme-summary-wordhype">  &lt;/styling&gt;   </span> websites. You may also catch me working on some photography, music, or buying more NFTs on Solana.
-                      </p>
+                    <div className="wrapper">
+                        <p className="aboutme-summary-p">
+                        I specialize in front-end development but I think it is important to be a Full Stack Engineer. Creating and Implementing UI's down to very fine details is very fulfilling, to say the least. Whenever I can find free time I like to work on small projects to help me get better at building and <span className="aboutme-summary-wordhype">  &lt;/styling&gt;   </span> websites. You may also catch me working on some photography, music, or buying more NFTs on Solana.
+                        </p>
+                    </div>
                   </div>
               </div>
           <div className="aboutme-right">
 
               <div className="aboutme-folder-container">
                   <img src={FolderIMG} alt="Download Resume" className="aboutme-foldericon" />
-                  <p className="folder-cap">
-                      Take a Copy of my Resume.
-                  </p>
-                  
+
                   <button className="aboutme-download-button">
                     <a href="https://docs.google.com/document/d/1Tmzk3M3Ymhiafsap6po-5VG3ow3DkbkKtPf1xU1dfkM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="linkedin-link">
-                        Download
-                        </a>
+                        Resume <RiDownload2Line/>
+                    </a>
                     </button> 
                   </div>
                   
