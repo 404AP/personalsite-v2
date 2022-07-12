@@ -10,7 +10,6 @@
 .contact-container {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  min-height: 750px;
   font-family: Michroma;
 }
 

@@ -64,6 +64,7 @@
 
 .hero-container .heroContent .hero-left {
   height: 94.5vh;
+  height: calc(var(--vh, 1vh) * 94.5);
   width: 60vw;
   border-right: 5px solid black;
   display: -ms-grid;
@@ -76,6 +77,7 @@
 
 .hero-container .heroContent .hero-left .hero-left-top .hero-name {
   margin: 15vh 0 8vh 0;
+  margin: calc(var(--vh, 1vh) * 15) 0 calc(var(--vh, 1vh) * 8) 0;
   padding: 0;
   font-family: subway-new-york-sc, sans-serif;
   font-weight: 400;
@@ -150,12 +152,14 @@
   max-width: 200px;
   max-height: 200px;
   margin: -4vh auto;
+  margin: calc(var(--vh, 1vh) * -4) auto;
 }
 
 .hero-container .heroContent .hero-left .hero-left-bottom .vercel-img {
   max-height: 205px;
   max-width: 308px;
   margin: -4vh auto;
+  margin: calc(var(--vh, 1vh) * -4) auto;
   padding: 0;
 }
 
@@ -278,6 +282,7 @@
   }
   .hero-container .heroContent .hero-left {
     height: 60vh;
+    height: calc(var(--vh, 1vh) * 60);
     width: 100%;
     border-right: 0px;
   }
@@ -337,6 +342,7 @@
   }
   .hero-container .heroContent .hero-left {
     height: 60vh;
+    height: calc(var(--vh, 1vh) * 60);
     width: 100%;
     border-right: 0px;
   }
