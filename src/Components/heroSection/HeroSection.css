@@ -269,13 +269,13 @@
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 70% 30%;
-        grid-template-rows: 70% 30%;
+    -ms-grid-rows: 60% 30%;
+        grid-template-rows: 60% 30%;
     grid-column-gap: 0;
     grid-row-gap: 0;
   }
   .hero-container .heroContent .hero-left {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     border-right: 0px;
   }
@@ -303,16 +303,20 @@
   .hero-container .heroContent .hero-right .hero-right-button-container {
     height: 100%;
     width: 100%;
+    margin-top: 5%;
+    -webkit-box-pack: revert;
+        -ms-flex-pack: revert;
+            justify-content: revert;
   }
   .hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right {
     font-size: 3.5vmin;
   }
   .hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right-subtext {
-    font-size: 2vmin;
+    font-size: calc(25px - 0.1vh - .1vw);
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 500px) {
   .hero-container {
     width: 100vw;
   }
@@ -324,13 +328,13 @@
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 70% 30%;
-        grid-template-rows: 70% 30%;
+    -ms-grid-rows: 60% 40%;
+        grid-template-rows: 60% 40%;
     grid-column-gap: 0;
     grid-row-gap: 0;
   }
   .hero-container .heroContent .hero-left {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     border-right: 0px;
   }
@@ -358,12 +362,15 @@
   .hero-container .heroContent .hero-right .hero-right-button-container {
     height: 100%;
     width: 100%;
+    -webkit-box-pack: revert;
+        -ms-flex-pack: revert;
+            justify-content: revert;
   }
   .hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right {
     font-size: 3.5vw;
   }
   .hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right-subtext {
-    font-size: 5vw;
+    font-size: calc(18px - 0.1vh - .1vw);
   }
 }
 /*# sourceMappingURL=HeroSection.css.map */

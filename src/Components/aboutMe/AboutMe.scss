@@ -559,12 +559,14 @@ $delay: .5s;
             .aboutme-content-conatiner {
                 display: grid;
                 width: 100vw;
-                height: 75vh;
+                height: 90vh;
                 grid-template-columns: 90vw;
-                grid-template-rows: 75% 25%;
+                grid-template-rows: 90% 10%;
+                grid-row-gap: 0;
                 row-gap: 0;
+                -webkit-column-gap: 0;
+                grid-column-gap: 0;
                 column-gap: 0;
-                
                 padding: 0;
                 margin: 0;
 
@@ -575,6 +577,7 @@ $delay: .5s;
                     grid-row-gap: 1vw;
                     margin: auto;
                     padding: 0;
+                    height: 100%;
 
 
                     .aboutme-skills {
@@ -589,7 +592,7 @@ $delay: .5s;
 
                     .aboutme-summary {
                         font-size: calc(1.2vh + .5vw);
-                        height: calc(500px - 18.5vw);
+                        /* height: calc(500px - 18.5vw); */
                         width: 100%;
 
                     }
@@ -603,7 +606,7 @@ $delay: .5s;
                     bottom: calc(23.5px + 16vw);
                     right: -45vw;
                     width: 52vw;
-                    height: 50vh;
+                    height: 22vh;
 
                     .aboutme-folder-container {
                         display: flex;
