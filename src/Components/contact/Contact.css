@@ -42,19 +42,18 @@
 }
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top {
+  font-size: calc(24px - 0.1vh - .1vw);
   background-color: rgba(128, 128, 128, 0.498);
   width: 60%;
   height: 70%;
   margin: 5vh auto 0 auto;
   border: black 3px solid;
   padding: 1%;
-  font-size: calc(14px + .2vmax);
 }
 
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .name-input {
   width: 100%;
   height: 10%;
-  font-size: calc(27px + .2vmax);
   margin: 5% auto;
 }
 
@@ -165,6 +164,7 @@
   }
   .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-top {
     width: 100%;
+    font-size: calc(16px - 0.1vh - .1vw);
   }
   .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-bottom input {
     width: 100%;

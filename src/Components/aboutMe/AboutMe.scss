@@ -62,7 +62,7 @@ $delay: .5s;
             grid-row-gap: 1vw;
             margin-left: 3vw;
             padding: 0;
-            font-size: 1.8vmin;
+            font-size: calc(20px - 0.1vh - .1vw);
             font-weight: bold;
             
             .aboutme-skills {
@@ -421,9 +421,9 @@ $delay: .5s;
                 height: 100%;
                 width: 100%;
                 //background-color: orchid;
-                overflow: hidden;
+                // overflow: hidden;
                 position: relative;
-
+                
                 .window-background-img {
                     width: 100%;
                     height: 100%;
@@ -440,19 +440,31 @@ $delay: .5s;
                     position: absolute;
 
                 }
-                
-                .aboutme-summary-p {
+
+                .wrapper {
+                    height: 75%;
+                    width: 100%;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    position: absolute;
                     top: 20%;
+                    left: 4%;
+                   .aboutme-summary-p {
+                    // top: 20%;
                     left: 4%;
                     position: absolute;
                     width: 90%;
+                    
 
-                    .aboutme-summary-wordhype {
-                        color: var(--primary-color);
-                    }
+                        .aboutme-summary-wordhype {
+                            color: var(--primary-color);
+                        }
 
 
+                    } 
                 }
+                
+                
 
 
 
@@ -559,12 +571,14 @@ $delay: .5s;
             .aboutme-content-conatiner {
                 display: grid;
                 width: 100vw;
-                height: 75vh;
+                height: 90vh;
                 grid-template-columns: 90vw;
-                grid-template-rows: 75% 25%;
+                grid-template-rows: 90% 10%;
+                grid-row-gap: 0;
                 row-gap: 0;
+                -webkit-column-gap: 0;
+                grid-column-gap: 0;
                 column-gap: 0;
-                
                 padding: 0;
                 margin: 0;
 
@@ -575,6 +589,7 @@ $delay: .5s;
                     grid-row-gap: 1vw;
                     margin: auto;
                     padding: 0;
+                    height: 100%;
 
 
                     .aboutme-skills {
@@ -588,8 +603,8 @@ $delay: .5s;
 
 
                     .aboutme-summary {
-                        font-size: calc(1.2vh + .5vw);
-                        height: calc(500px - 18.5vw);
+                        // font-size: calc(1.2vh + .5vw);
+                        /* height: calc(500px - 18.5vw); */
                         width: 100%;
 
                     }
@@ -603,7 +618,7 @@ $delay: .5s;
                     bottom: calc(23.5px + 16vw);
                     right: -45vw;
                     width: 52vw;
-                    height: 50vh;
+                    height: 22vh;
 
                     .aboutme-folder-container {
                         display: flex;
@@ -611,7 +626,7 @@ $delay: .5s;
 
 
                         .aboutme-foldericon {
-                            margin: auto 0px 3vh auto;
+                            margin: 2vh -5vh 1vh auto;
                             
                         }
                         .folder-cap {
@@ -661,14 +676,13 @@ $delay: .5s;
             margin: 0px;
 
             .aboutme-left {
-                height: 60vh;
-                width: 95vw;
-                grid-template-columns: 100%;
-                grid-template-rows: 25% 75%;
+                grid-template-columns: 110%;
+                grid-template-rows: 20% 60%;
                 grid-column-gap: 1vw;
                 grid-row-gap: 1vw;
                 margin: auto;
                 padding: 0;
+                height: 100%;
                 // background-color: aqua;
 
                 .aboutme-skills {
@@ -683,8 +697,9 @@ $delay: .5s;
 
                 .aboutme-summary {
                     font-size: calc(4px + 1.2vh + .05vw);
-                    height: calc(500px - 30vw);
+                    // height: calc(500px - 30vw);
                     width: 100%;
+
 
                 }
 

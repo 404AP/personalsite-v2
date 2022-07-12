@@ -32,8 +32,8 @@ export default function HeroSection() {
   
   useEffect(() => {
   
-  if(window.scrollY < 300) {blockScroll();} else {setLock(false);};
-  
+  if(("/" === window.location.href.charAt(window.location.href.length - 1)) ) {blockScroll();} else {setLock(false);};
+  console.log(window.location.href);
   return () => {
       
   };

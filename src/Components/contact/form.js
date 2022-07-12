@@ -11,9 +11,7 @@ const Form = () => {
   };
 
   const { register, handlingSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => {
-      console.log(formElement.elements)
-  };
+
 
   const { handleSubmit, status, message } = useFormHero({
     form: formElement.current,
@@ -49,16 +47,16 @@ const Form = () => {
         <div className="contact-form-top">
             <label htmlFor="name" className="contact-name-label"  > Name:</label>
             <br />
-            <input   className='name-input' id='name'   {...register("Name" , { required: true })}/>
+            <input   className='name-input' id='name'   required {...register("Name" , { required: true })}/>
             <br />
             <label htmlFor="email" className="contact-email-label" > Email:</label>
             <br />
-            <input  type='email' className='email-input' id='email' {...register("Email" , { required: true })}/>
+            <input  type='email' className='email-input' id='email' required {...register("Email" , { required: true })}/>
             <br />
             <label htmlFor="options">I would like to talk more about :</label>
             <br />
-            <fieldset type="radio" className="contact-radio-buttons" id='options'>
-                <input type="radio" className="option-1" value='website' name='options' {...register("reason" , { required: true })}/>
+            <fieldset type="radio" className="contact-radio-buttons" id='options' required>
+                <input type="radio" className="option-1" value='website' name='options'  {...register("reason" , { required: true })}/>
                 <label htmlFor="website" className="contact-option-label">Building a Website/ Web App</label>
                 <br />
                 <input type="radio" className="option-2" value="consulting" name='options' {...register("reason" , { required: true })}/>
