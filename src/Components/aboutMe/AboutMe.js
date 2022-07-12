@@ -26,54 +26,54 @@ export default function AboutMe() {
                   <br></br>
                   <ul className="aboutme-languages-list">
                       <li className="aboutme-listitem js">
-                      <div class="progressbar-title">
+                      <div className="progressbar-title">
                           <h4>JS</h4>
-                          <div class="percent" id="js-pourcent">
+                          <div className="percent" id="js-pourcent">
                               <div className={"value" + (isVisible?" animated":"")}></div>
                           </div>
                           <h5 className="pourcent">90/100</h5>
                       </div>
                       </li>
                       <li className="aboutme-listitem html">
-                      <div class="progressbar-title">
+                      <div className="progressbar-title">
                           <h4>HTML</h4>
-                          <div class="percent" id="html-pourcent">
+                          <div className="percent" id="html-pourcent">
                               <div className={"value" + (isVisible?" animated":"")}></div>
                               </div>
                           <h5 className="pourcent">90/100</h5>
                       </div>
                       </li>                            
                       <li className="aboutme-listitem java">
-                      <div class="progressbar-title">
+                      <div className="progressbar-title">
                           <h4>Java</h4>
-                          <div class="percent" id="java-pourcent">
+                          <div className="percent" id="java-pourcent">
                               <div className={"value" + (isVisible?" animated":"")}></div>
                               </div>
                           <h5 className="pourcent">85/100</h5>
                       </div>
                       </li>
                       <li className="aboutme-listitem css">
-                      <div class="progressbar-title">
+                      <div className="progressbar-title">
                           <h4>CSS</h4>
-                          <div class="percent" id="css-pourcent">
+                          <div className="percent" id="css-pourcent">
                               <div className={"value" + (isVisible?" animated":"")}></div>
                               </div>
                           <h5 className="pourcent">85/100</h5>
                       </div>       
                       </li>
                       <li className="aboutme-listitem python">
-                      <div class="progressbar-title">
+                      <div className="progressbar-title">
                           <h4>Python</h4>
-                          <div class="percent" id="python-pourcent">
+                          <div className="percent" id="python-pourcent">
                               <div className={"value" + (isVisible?" animated":"")}></div>
                               </div>
                           <h5 className="pourcent">80/100</h5>
                       </div>
                       </li>
                       <li className="aboutme-listitem php">
-                      <div class="progressbar-title">
+                      <div className="progressbar-title">
                           <h4>Php</h4>
-                          <div class="percent" id="php-pourcent">
+                          <div className="percent" id="php-pourcent">
                               <div className={"value" + (isVisible?" animated":"")}></div>
                               </div>
                           <h5 className="pourcent">70/100</h5>
