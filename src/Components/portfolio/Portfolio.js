@@ -25,11 +25,11 @@ export default class Portfolio extends Component {
             {link: 'https://github.com/404AP/Speedy-Integration-Tool',
             thumbnail: powershellIMG,
             preview: speedyIMG,
-            description:"This tool was created at my last job to automate the mundane process of setting up a new Business Computer. In our shop, we worked with Lenovo and Dell desktops, laptops, and servers. Often times we would get wholesale shipments of new computers to bring online, which could take weeks to do individually by hand. I created this script to automate as much of the software process as possible so that we would not fall behind on the repairs that we were also responsible for. Over a couple of months, this tool grew to a central part of the success of the Bench team.",
+            description:"This tool was created at my last job to automate the mundane process of setting up a new Business Computer. In our shop, we worked with Lenovo and Dell desktops, laptops, and servers. Often times we would get wholesale shipments of new computers to bring online. Setting them up could take weeks to do individually by hand. I created this script to automate as much of the software process as possible. This allowed us to not fall behind on the repairs while getting ahead on new setups. Over a couple of months, this tool grew to a central part of the success of the Bench team. ",
             key:"0",
             title:"Speedy Integration Tool"}
             ,
-            {text: 'xxx',
+            {link: 'https://grindsetglobal.com',
             thumbnail: grindsetglobalThumbIMG,
             preview: ggIMG,
             description:"Grindset Global is a Lifestyle brand that I started in high school. The goal of Grindset Global is to eventually create all the tools someone would need to become the next big culture influencer via social media and the tools that a business might need to directly engage a niche audience.  In the past, I have created/edited graphics, done photoshoots, built a Shopify, and managed a social media page. My need project will be to create an NFT collection on Solana and reward a percentage of the proceeds to artists who build more awareness for the brand. The rest of the funds will be used for community donations and social media competitions that spill over into the real world. These competitions will be the breeding ground for the next big influencers.",
@@ -39,14 +39,14 @@ export default class Portfolio extends Component {
             {text: 'xxx',
             thumbnail: gtthumbIMG,
             preview: gtpreview,
-            description:"I went to Georgia Tech and majored in Computer Science. I am currently a junior by credits and hope to finish online school by the end of 2023. I have already taken multiple courses on advanced computing concepts like Data Structures & Algorithms, Computer Systems & Organization, Object-Oriented Programming, and Databases. Most of these classes were taught using java except Computer Systems which was taught in C and Databases which introduced me to SQL.",
+            description:"I went to Georgia Tech, where I majored in Computer Science. I am currently a junior by credits in college and hope to finish online school by the end of 2023. I have already taken multiple courses on advanced computing concepts like Data Structures & Algorithms, Computer Systems & Organization, Object-Oriented Programming, and Databases. Most of these classes were taught using java except Computer Systems which was taught in C and Databases which introduced me to SQL. My background in the Georgia Tech College of Computing gave me a base to start teaching myself more about coding.",
             key:"2",
             title:"Course Work"}
             ,
             {text: 'xxx',
             thumbnail: gsIMG,
             preview: itpreview,
-            description:"I have over a decade of experience in IT Support because I started in the summer of 2011. Since then I have held roles at two Schools, Geek Squad and a Lenovo/DELL Authorized Repair Center.  I love explaining complex technology to people who don't understand it as well. During my time in IT, I have set up thousands of computers, done numerous software repairs,  saved data from total loss, done numerous hardware repairs( whenever we could afford parts), and lastly helped so many people to do their jobs more efficiently.",
+            description:"I have over a decade of experience in IT Support. I started in the summer of 2011 when I was just 13.  Since then I have held roles at two Schools, Geek Squad and a Lenovo/DELL Authorized Repair Center.  I love explaining complex technology to people who don't understand it as well. During my time in IT, I have set up thousands of computers, done numerous software/hardware repairs,  and saved petabytes of data from total loss. My experience as an IT professional shaped my general attitude towards computing and how it can be used to make people more efficient.",
             key:"3",
             title:"IT Background"}
             

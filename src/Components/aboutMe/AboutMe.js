@@ -103,7 +103,7 @@ export default function AboutMe() {
                   <h4 className="aboutme-skills-subheader summary"> Summary:</h4>
                     <div className="wrapper">
                         <p className="aboutme-summary-p">
-                        I specialize in front-end development but I think it is important to be a Full Stack Engineer. Creating and Implementing UI's down to very fine details is very fulfilling, to say the least. Whenever I can find free time I like to work on small projects to help me get better at building and <span className="aboutme-summary-wordhype">  &lt;/styling&gt;   </span> websites. You may also catch me working on some photography, music, or buying more NFTs on Solana.
+                        I specialize in front-end development but I think it is important to be a Full Stack Engineer. Creating and Implementing UI's down to very fine details is very fulfilling, to say the least. Whenever I can find free time I like to work on small projects to help me get better at building and  <span className="aboutme-summary-wordhype">  &lt;/styling&gt;   </span>  websites. You may also catch me working on photography, music, or buying NFTs on Solana.
                         </p>
                     </div>
                   </div>
