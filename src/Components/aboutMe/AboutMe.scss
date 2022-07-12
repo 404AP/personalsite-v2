@@ -409,15 +409,24 @@ $delay: .5s;
                     
                 }
 
-
-                .interest-list {
+                .wrapper {
+                    height: 70%;
+                    width: 94%;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    position: absolute;
+                    top: 23%;
+                    left: 4%;
+                  .interest-list {
                     
                     padding-right: 10%;
-                    top: 20%;
+                    // top: 20%;
                     left: 10%;
                     position: absolute;
+                  }
+  
                 }
-
+                
             }
 
             .aboutme-summary {
@@ -446,12 +455,12 @@ $delay: .5s;
                 }
 
                 .wrapper {
-                    height: 75%;
-                    width: 100%;
+                    height: 70%;
+                    width: 94%;
                     overflow-y: scroll;
                     overflow-x: hidden;
                     position: absolute;
-                    top: 20%;
+                    top: 23%;
                     left: 4%;
                    .aboutme-summary-p {
                     // top: 20%;

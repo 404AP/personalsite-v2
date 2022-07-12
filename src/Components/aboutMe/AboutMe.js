@@ -88,13 +88,15 @@ export default function AboutMe() {
               <div className="aboutme-interest">
                   <img src={WindowIMG} alt="Skills Section" className="window-background-img" />
                   <h4 className="aboutme-skills-subheader interest"> Interest:</h4>
-                  <ul className="interest-list">
-                      <li className="aboutme-listitem">Economics in General</li>
-                      <li className="aboutme-listitem">Positioning Crypto as the future of Global Finance</li>
-                      <li className="aboutme-listitem">Building Real World Utility for Solana NFTs</li>
-                      <li className="aboutme-listitem">I love the impact of sports more than any particular team or player</li>
-                      <li className="aboutme-listitem">Various Art Forms but mainly Music, Paintings,  Film, and NFTs.</li>
-                      </ul>
+                  <div className="wrapper">
+                    <ul className="interest-list">
+                        <li className="aboutme-listitem">Economics in General</li>
+                        <li className="aboutme-listitem">Positioning Crypto as the future of Global Finance</li>
+                        <li className="aboutme-listitem">Building Real World Utility for Solana NFTs</li>
+                        <li className="aboutme-listitem">I love the impact of sports more than any particular team or player</li>
+                        <li className="aboutme-listitem">Various Art Forms but mainly Music, Paintings,  Film, and NFTs.</li>
+                        </ul>
+                    </div>    
                   </div>
               <div className="aboutme-summary">
                   <img src={WindowIMG} alt="Skills Section" className="window-background-img" />

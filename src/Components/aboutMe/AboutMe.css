@@ -398,9 +398,18 @@
   position: absolute;
 }
 
-.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest .interest-list {
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest .wrapper {
+  height: 70%;
+  width: 94%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 23%;
+  left: 4%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-interest .wrapper .interest-list {
   padding-right: 10%;
-  top: 20%;
   left: 10%;
   position: absolute;
 }
@@ -426,12 +435,12 @@
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary .wrapper {
-  height: 75%;
-  width: 100%;
+  height: 70%;
+  width: 94%;
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 4%;
 }
 
