@@ -9,6 +9,7 @@
 
 .contact-container {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height: 750px;
   font-family: Michroma;
 }
@@ -47,6 +48,7 @@
   width: 60%;
   height: 70%;
   margin: 5vh auto 0 auto;
+  margin: calc(var(--vh, 1vh) * 5) auto 0 auto;
   border: black 3px solid;
   padding: 1%;
 }
@@ -83,6 +85,7 @@
   margin: 2% 35% 0 35%;
   width: 30%;
   height: 6vh;
+  height: calc(var(--vh, 1vh) * 6);
   font-family: Michroma;
   font-weight: 500;
   font-size: calc(14px + .2vmax);
@@ -117,6 +120,7 @@
   }
   .contact-container .contact-header {
     margin: 0 auto 8vh 3vw;
+    margin: 0 auto calc(var(--vh, 1vh) * 8) 3vw;
     font-size: 9vmin;
   }
   .contact-container .contact-content-container {
@@ -150,6 +154,7 @@
   .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-bottom input {
     display: block;
     margin: 1vh auto;
+    margin: calc(var(--vh, 1vh) * 1) auto;
     width: calc(403px + 6vmax);
   }
   .contact-container .contact-content-container .contact-right {
@@ -160,6 +165,7 @@
 @media only screen and (max-width: 500px) {
   .contact-container .contact-header {
     margin: 0 auto 8vh 3vw;
+    margin: 0 auto calc(var(--vh, 1vh) * 8) 3vw;
     font-size: 12vmin;
   }
   .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-top {
