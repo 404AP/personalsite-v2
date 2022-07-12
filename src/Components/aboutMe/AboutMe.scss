@@ -665,9 +665,9 @@ $delay: .5s;
 
         .aboutme-content-conatiner {
             display: grid;
-            width: 100vw;
+            // width: 100vw;
             height: 80vh;
-            grid-template-columns: 100vw;
+            grid-template-columns: 90vw;
             grid-template-rows: 90% 10%;
             row-gap: 0;
             column-gap: 0;
@@ -677,7 +677,7 @@ $delay: .5s;
 
             .aboutme-left {
                 grid-template-columns: 110%;
-                grid-template-rows: 20% 60%;
+                grid-template-rows: 30% 70%;
                 grid-column-gap: 1vw;
                 grid-row-gap: 1vw;
                 margin: auto;
