@@ -1,5 +1,6 @@
 .hero-container {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   border: 5px solid black;
   color: var(--primary-color);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(151, 250, 108, 0.552)));
@@ -160,6 +161,7 @@
 
 .hero-container .heroContent .hero-right {
   height: 94.5vh;
+  height: calc(var(--vh, 1vh) * 94.5);
   width: 38.2vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,7 +284,7 @@
   .hero-container .heroContent .hero-left .hero-left-top .hero-name {
     width: 80%;
     font-size: 25vmin;
-    margin: 15vh auto 4vw auto;
+    margin: calc(var(--vh, 1vh) * 15) auto 4vw auto;
   }
   .hero-container .heroContent .hero-left .hero-left-top .hero-subheading {
     font-size: 4vmin;
@@ -341,7 +343,7 @@
   .hero-container .heroContent .hero-left .hero-left-top .hero-name {
     width: 80%;
     font-size: calc(125px - 1vw);
-    margin: 15vh auto 4vw auto;
+    margin: calc(var(--vh, 1vh) * 15) auto 4vw auto;
   }
   .hero-container .heroContent .hero-left .hero-left-top .hero-subheading {
     font-size: 4vmin;

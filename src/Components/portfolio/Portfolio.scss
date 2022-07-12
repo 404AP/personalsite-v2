@@ -10,6 +10,7 @@
 
 .portfolio-container {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     // min-height: 750px;
     // background-color: tan;
     font-family: Michroma;
@@ -106,6 +107,7 @@
             .site-des-container {
                 margin-top: 5%;
                 padding:0vh 10px 1vh 10px;
+                padding: 0vh 10px calc(var(--vh, 1vh) * 1) 10px;
                 height: 30%;
                 border: solid black 3px;
                 background-color: black;
@@ -147,6 +149,7 @@
         background-image: none !important;
         width: 100vw;
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         overflow: visible;
 
         .portfolio-header {
@@ -178,6 +181,7 @@
                     height: 100%;
                     margin: 1% 3%;
                     padding-top: 1vh;
+                    padding-top: calc(var(--vh, 1vh) * 1);
 
                     ul {
                         font-size: 1vw;

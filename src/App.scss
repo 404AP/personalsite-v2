@@ -29,6 +29,7 @@
 .app-footer {
   background-color: black;
   height: 20vh;
+  height: calc(var(--vh, 1vh) * 20);
 
   .menu-container {
     display: block;

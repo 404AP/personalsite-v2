@@ -1,5 +1,5 @@
 import { RiHandHeartFill } from "react-icons/ri/";
-import React  from 'react';
+import React , {useEffect, useState}  from 'react';
 
 import './App.css';
 import {BrowserRouter} from 'react-router-dom';
@@ -11,6 +11,24 @@ import Contact from './Components/contact/contact';
 import Navbar from './Components/Navbar/Navbar';
 
 function App() {
+
+  const [curVh , setNewVh] = useState(0);
+
+  function setHeight() {
+    let newHeight = window.innerHeight * 0.01;
+    if (curVh === 0 || ((Math.abs((curVh - newHeight)/curVh)) > 0.5)) {
+      setNewVh(newHeight);
+    }
+    
+    document.documentElement.style.setProperty('--vh', `${curVh}px`);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', setHeight);
+    return () => {
+      window.removeEventListener('resize', setHeight);
+    };
+  }, [curVh])
   return (
     <BrowserRouter>
     <div className="App">
