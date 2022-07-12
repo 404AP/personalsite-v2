@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { RiMenu3Line, RiCloseFill, RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri/";
 import {HashLink as Link} from "react-router-hash-link";
 import './Navbar.css';
@@ -8,7 +8,7 @@ export default function Navbar() {
 
     const[navbar, setNav] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [color,setColor] = useState("#67ba43");
+    const ref = useRef();
 
     const handleToggle = () => setNav((navbar) => !navbar);
     const handleScroll = () => {
@@ -16,28 +16,37 @@ export default function Navbar() {
         
         setScrollPosition((scrollPosition) => position );
       };
+    const checkOutside = (e) => {
+        if(!(ref.current.contains( e.target))){
+            setNav((navbar) => false );
+        }
+    }
+    
 
     useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+        
 
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener('mousedown', checkOutside);    
     return () => {
-        window.removeEventListener("scroll", handleScroll);
-    };
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener('mousedown', checkOutside);  
+        };
     }, []);
 
 
 
   return (
-        <div className={"navbar-container " + (navbar ? 'isOpen': 'isClosed') + (scrollPosition > (0.75 * window.innerHeight) ? '' : ' not-visible')}>
+        <div ref={ref} className={"navbar-container " + (navbar ? 'isOpen': 'isClosed') + (scrollPosition > (0.85 * window.innerHeight) ? '' : ' not-visible')}>
         <div className="nav-icon-closed">
-            <RiMenu3Line onClick={handleToggle} className={'open ' + (navbar ? 'not-visible': '')} style={{color: color}}/>
+            <RiMenu3Line onClick={handleToggle} className={'open ' + (navbar ? 'not-visible': '')} style={{color: "#67ba43"}}/>
         </div>
         <div className="nav-icon-open">
             <RiCloseFill onClick={handleToggle} className={'close ' + (navbar ? '' : 'not-visible') }/>
         </div>
         <div className={"drawer " + (navbar ? '' : 'not-visible')}>
             <ul className="menu-options">
-                <p className="t" style={{color: 'white'}}> {scrollPosition} </p>
+                
                 <li className="menu-item">
                     <Link to="#" className='link' smooth>
                         Home

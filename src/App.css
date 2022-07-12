@@ -28,8 +28,8 @@
 .app-footer .menu-container {
   display: block;
   width: calc(355px +  1vw);
-  height: 80%;
-  margin: 1vh auto auto 1vw;
+  height: 20%;
+  margin: 1vh auto 30px 1vw;
 }
 
 .app-footer .menu-container .menu-options {
@@ -59,10 +59,8 @@
 
 .app-footer .thankyou {
   font-family: Michroma;
-  height: 10%;
   text-align: center;
   color: white;
-  width: 50%;
-  margin-left: 25%;
+  font-size: 2vh;
 }
 /*# sourceMappingURL=App.css.map */

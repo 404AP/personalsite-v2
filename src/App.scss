@@ -34,9 +34,9 @@
     display: block;
     
     width: calc(355px +  1vw);
-    height: 80%;
+    height: 20%;
     // background-color: red;
-    margin: 1vh auto auto 1vw;
+    margin: 1vh auto 30px 1vw;
 
     .menu-options{
         display: flex;
@@ -59,10 +59,9 @@
   }
   .thankyou {
         font-family: Michroma;
-        height: 10%; 
+        
         text-align: center;
-        color: white;
-        width: 50%;
-        margin-left: 25%;
+        color: white;   
+        font-size: 2vh;
     }
 }

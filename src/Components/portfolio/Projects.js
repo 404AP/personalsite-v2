@@ -12,7 +12,7 @@ function Projects(props) {
    
     const listItems = items.map( item => {
         let image = {backgroundImage: 'url(' + item.thumbnail + ')'};
-        let selected =  currentItem == item.key ? "selected" : '' ;
+        let selected =  currentItem === item.key ? "selected" : '' ;
         return (<div 
                     onClick={(e) => {
                         e.preventDefault();

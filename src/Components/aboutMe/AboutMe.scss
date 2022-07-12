@@ -1,6 +1,7 @@
 
 
 $font-family: 'Michroma';
+$delay: .5s;
 
 *,
 *:before,
@@ -62,6 +63,7 @@ $font-family: 'Michroma';
             margin-left: 3vw;
             padding: 0;
             font-size: 1.8vmin;
+            font-weight: bold;
             
             .aboutme-skills {
                                 
@@ -119,11 +121,19 @@ $font-family: 'Michroma';
                                 // padding-top: 2%;
                                 // background-color: #3c2279;
 
-                                .value-1 {
-
+                                .value {
                                     height: 100%;
+                                    width: 1%;
+                                    background-color: #27ae60; 
+                                    transition: width 2s linear;
+                                    transition-delay: $delay;
+                                }
+
+                                .value.animated{
                                     width: 85%;
-                                    background-color: #27ae60;
+                                }
+                                .value:hover{
+                                    background-color: gold;
                                 }
                             }
                         }
@@ -158,15 +168,19 @@ $font-family: 'Michroma';
                                 // padding-top: 2%;
                                 // background-color: #3c2279;
 
-                                .value-1 {
+                                .value {
                                     height: 100%;
                                     width: 1%;
                                     background-color: #27ae60; 
                                     transition: width 2s linear;
+                                    transition-delay: $delay;
                                 }
 
-                                .value-1.animated{
+                                .value.animated{
                                     width: 90%;
+                                }
+                                .value:hover{
+                                    background-color: gold;
                                 }
                             }
                         }
@@ -201,11 +215,19 @@ $font-family: 'Michroma';
                                 // padding-top: 2%;
                                 // background-color: #3c2279;
 
-                                .value-1 {
-
+                                .value {
                                     height: 100%;
-                                    width: 70%;
-                                    background-color: #27ae60;
+                                    width: 1%;
+                                    background-color: #27ae60; 
+                                    transition: width 2s linear;
+                                    transition-delay: $delay;
+                                }
+
+                                .value.animated{
+                                    width: 80%;
+                                }
+                                .value:hover{
+                                    background-color: gold;
                                 }
                             }
                         }
@@ -240,11 +262,19 @@ $font-family: 'Michroma';
                                 // padding-top: 2%;
                                 // background-color: #3c2279;
 
-                                .value-1 {
-
+                                .value {
                                     height: 100%;
-                                    width: 70%;
-                                    background-color: #27ae60;
+                                    width: 1%;
+                                    background-color: #27ae60; 
+                                    transition: width 2s linear;
+                                    transition-delay: $delay;
+                                }
+
+                                .value.animated{
+                                    width: 90%;
+                                }
+                                .value:hover{
+                                    background-color: gold;
                                 }
                             }
                         }
@@ -278,11 +308,19 @@ $font-family: 'Michroma';
                                 // padding-top: 2%;
                                 // background-color: #3c2279;
 
-                                .value-1 {
-
+                                .value {
                                     height: 100%;
-                                    width: 70%;
-                                    background-color: #27ae60;
+                                    width: 1%;
+                                    background-color: #27ae60; 
+                                    transition: width 2s linear;
+                                    transition-delay: $delay;
+                                }
+
+                                .value.animated{
+                                    width: 85%;
+                                }
+                                .value:hover{
+                                    background-color: gold;
                                 }
                             }
                         }
@@ -316,11 +354,20 @@ $font-family: 'Michroma';
                                 // padding-top: 2%;
                                 // background-color: #3c2279;
 
-                                .value-1 {
-
+                                .value {
                                     height: 100%;
+                                    width: 1%;
+                                    background-color: #27ae60; 
+                                    transition: width 2s linear;
+                                    transition-delay: $delay;
+                                }
+
+                                .value.animated{
                                     width: 70%;
-                                    background-color: #27ae60;
+                                }
+
+                                .value:hover{
+                                    background-color: gold;
                                 }
                             }
                         }
@@ -444,6 +491,7 @@ $font-family: 'Michroma';
 
                 .folder-cap {
                     font-size: 1.5vmin;
+                    font-weight: bold;
                     margin: -10% auto 0 auto;
                     
                 }
@@ -458,7 +506,10 @@ $font-family: 'Michroma';
 
                     width:90%;
                     height: 12vh;
-
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
                     color: black;
                     font-family:Michroma;
 
@@ -471,7 +522,10 @@ $font-family: 'Michroma';
 
                 .aboutme-download-button:hover {
                     background-color: var(--primary-color);
-                    color: white;
+                    a {
+                     color: white;   
+                    }
+                    
                 }
 
 
@@ -590,29 +644,32 @@ $font-family: 'Michroma';
         
 
         .aboutme-header {
-            margin: 10vw 1vw;
+            margin: 5vh 1vw 1vh 1vw;
             font-size: 11vmin;
         }
 
         .aboutme-content-conatiner {
             display: grid;
             width: 100vw;
-            height: 75vh;
-            grid-template-columns: 90vw;
+            height: 80vh;
+            grid-template-columns: 100vw;
+            grid-template-rows: 90% 10%;
             row-gap: 0;
             column-gap: 0;
             
-            padding: 0;
-            margin: 0;
+            padding: 0px;
+            margin: 0px;
 
             .aboutme-left {
-                grid-template-columns: 110%;
-                grid-template-rows: 40% 60%;
+                height: 60vh;
+                width: 95vw;
+                grid-template-columns: 100%;
+                grid-template-rows: 25% 75%;
                 grid-column-gap: 1vw;
                 grid-row-gap: 1vw;
                 margin: auto;
                 padding: 0;
-
+                // background-color: aqua;
 
                 .aboutme-skills {
                     display: none;
@@ -625,8 +682,8 @@ $font-family: 'Michroma';
 
 
                 .aboutme-summary {
-                    font-size: calc(1.2vh + .05vw);
-                    height: calc(375px - 30vw);
+                    font-size: calc(4px + 1.2vh + .05vw);
+                    height: calc(500px - 30vw);
                     width: 100%;
 
                 }
@@ -639,7 +696,7 @@ $font-family: 'Michroma';
                 bottom: calc(85.5px + 16vh);
                 right: -45vw;
                 width: 55vw;
-                height: 42vh;
+                height: 39vh;
 
                 .aboutme-folder-container {
                     height: calc(220px - 15vw);

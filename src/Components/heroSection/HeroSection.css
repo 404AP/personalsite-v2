@@ -7,7 +7,7 @@
   font-family: Michroma;
   display: -ms-grid;
   display: grid;
-  margin: 0;
+  margin: 0px 0px 1px 0px;
   padding: 0;
 }
 
@@ -122,8 +122,8 @@
           animation-name: glowing-pulse;
   -webkit-animation-duration: .2s;
           animation-duration: .2s;
-  -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 15;
+          animation-iteration-count: 15;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   text-shadow: 0 0 7px #fff, 0 0 10px var(--primary-color), 0 0 21px var(--primary-color), 0 0 42px var(--primary-color), 0 0 82px var(--primary-color), 0 0 92px var(--primary-color), 0 0 102px var(--primary-color), 0 0 151px var(--primary-color);
@@ -253,6 +253,7 @@
 
 .hero-container .heroContent .hero-right .hero-right-button-container .cta-hero-right-subtext {
   font-size: 1.4vw;
+  font-weight: bold;
   letter-spacing: .15em;
 }
 

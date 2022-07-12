@@ -8,7 +8,7 @@
      background-image: linear-gradient( rgba(151, 250, 108, 0.552) 50%);
      font-family: Michroma;
      display: grid;
-     margin: 0;
+     margin: 0px 0px 1px 0px;
      padding: 0;
      
 
@@ -134,7 +134,7 @@
                         color: #fff;
                         animation-name: glowing-pulse;
                         animation-duration: .2s;
-                        animation-iteration-count: 4;
+                        animation-iteration-count: 15;
                         animation-timing-function: linear;
                         text-shadow:
                           0 0 7px #fff,
@@ -284,6 +284,7 @@
                     }
                     .cta-hero-right-subtext {
                         font-size: 1.4vw;
+                        font-weight: bold;
                         letter-spacing: .15em;
                     }
                 }

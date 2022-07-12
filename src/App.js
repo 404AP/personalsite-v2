@@ -1,6 +1,6 @@
 import { RiHandHeartFill } from "react-icons/ri/";
-import React, { Component }  from 'react';
-import logo from './logo.svg';
+import React  from 'react';
+
 import './App.css';
 import {BrowserRouter} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';

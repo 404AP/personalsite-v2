@@ -1,4 +1,4 @@
-import React, { Component , useEffect, useState} from 'react'
+import React, { useEffect, useState} from 'react'
 import { RiLockFill, RiLockUnlockFill} from "react-icons/ri/";
 import {HashLink as Link} from 'react-router-hash-link';
 import NodeImage from "../../Assets/node.png"
@@ -7,14 +7,12 @@ import ReactImage from "../../Assets/react.png"
 import MonitorImage from "../../Assets/monitor.png"
 import "./HeroSection.css"
 import useScrollBlock from '../../useScrollBlock';
-import { nodeName } from 'jquery';
 
 
 
 export default function HeroSection() {
 
   const [blockScroll, allowScroll] = useScrollBlock();
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [locked, setLock] = useState(true);
 
   const hide = {
@@ -23,12 +21,7 @@ export default function HeroSection() {
 
 
   
-  const handleScroll = () => {
-      const position = window.scrollY;
 
-         
-      setScrollPosition((scrollPosition) => position );
-    };
 
   function handleClick() { 
     setLock(false); 
@@ -39,12 +32,10 @@ export default function HeroSection() {
   
   useEffect(() => {
   
-  window.addEventListener("scroll", handleScroll);
-  
   if(window.scrollY < 300) {blockScroll();} else {setLock(false);};
   
   return () => {
-      window.removeEventListener("scroll", handleScroll);
+      
   };
   }, []);
 
