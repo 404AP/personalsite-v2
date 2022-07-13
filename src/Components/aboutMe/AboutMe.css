@@ -653,7 +653,7 @@
     height: calc(220px - 15vw);
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-foldericon {
-    margin: auto auto 2vh auto;
+    margin: auto 1vw 2vh auto;
     size: 50%;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right .folder-cap {
