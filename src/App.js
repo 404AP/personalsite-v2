@@ -16,11 +16,12 @@ function App() {
 
   function setHeight() {
     let newHeight = window.innerHeight * 0.01;
-    if (curVh === 0 || newHeight > (curVh + 60) ||((Math.abs((curVh - newHeight)/curVh)) > 0.2)) {
+    if (curVh === 0 || newHeight > (curVh) ||((Math.abs((curVh - newHeight)/curVh)) > 0.2)) {
       setNewVh(newHeight);
-    } else {
-      document.documentElement.style.setProperty('--vh', `${curVh}px`);
-    }
+      document.documentElement.style.setProperty('--vh', `${newHeight}px`);
+    } 
+    
+  
   }
 
   useEffect(() => {

@@ -25,7 +25,7 @@
   margin: auto auto auto 3vw;
   padding: 0;
   color: white;
-  font-size: 5.5em;
+  font-size: calc(var(--vh, 1vh) * 10);
   font-weight: normal;
   letter-spacing: .1em;
   text-shadow: 1vmin 1vmin rgba(0, 0, 0, 0.137);
@@ -56,7 +56,7 @@
   grid-row-gap: 1vw;
   margin-left: 3vw;
   padding: 0;
-  font-size: calc(20px - 0.1vh - .1vw);
+  font-size: calc(20px - calc(var(--vh, 1vh) * .1) - .1vw);
   font-weight: bold;
 }
 
@@ -82,11 +82,16 @@
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list {
   list-style: none;
-  top: 25%;
+  top: 30%;
   left: 5%;
   position: absolute;
   margin-bottom: -3vh;
   margin-bottom: calc(var(--vh, 1vh) * -3);
+  height: 70%;
+}
+
+.aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list li {
+  height: 14%;
 }
 
 .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-skills .aboutme-languages-list .aboutme-listitem.java {
@@ -600,12 +605,14 @@
   }
   .aboutme-container .aboutme-header {
     margin: 5vh 1vw 1vh 1vw;
+    margin: calc(var(--vh, 1vh) * 5) 1vw calc(var(--vh, 1vh) * 1) 1vw;
     font-size: 11vmin;
   }
   .aboutme-container .aboutme-content-conatiner {
     display: -ms-grid;
     display: grid;
     height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
     -ms-grid-columns: 90vw;
         grid-template-columns: 90vw;
     -ms-grid-rows: 90% 10%;
@@ -634,21 +641,23 @@
     display: none;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-left .aboutme-summary {
-    font-size: calc(4px + 1.2vh + .05vw);
+    font-size: calc(4px + calc(var(--vh, 1vh) * 1.2) + .05vw);
     width: 100%;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right {
     position: relative;
-    bottom: calc(85.5px + 16vh);
+    bottom: calc(85.5px + calc(var(--vh, 1vh) * 16));
     right: -45vw;
     width: 55vw;
     height: 39vh;
+    height: calc(var(--vh, 1vh) * 39);
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container {
     height: calc(220px - 15vw);
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right .aboutme-folder-container .aboutme-foldericon {
-    margin: auto auto 2vh auto;
+    margin: auto 1vw 2vh auto;
+    margin: auto 1vw calc(var(--vh, 1vh) * 2) auto;
     size: 50%;
   }
   .aboutme-container .aboutme-content-conatiner .aboutme-right .folder-cap {

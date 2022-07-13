@@ -33,7 +33,8 @@ $delay: .5s;
         margin: auto auto auto 3vw;
         padding: 0;
         color: white;
-        font-size: 5.5em;
+        // font-size: 5.5em
+        font-size: calc(var(--vh, 1vh) * 10);
         font-weight: normal;
         letter-spacing: .1em;
         text-shadow:1vmin 1vmin rgba(0, 0, 0, 0.137);
@@ -65,7 +66,7 @@ $delay: .5s;
             grid-row-gap: 1vw;
             margin-left: 3vw;
             padding: 0;
-            font-size: calc(20px - 0.1vh - .1vw);
+            font-size: calc(20px - calc(var(--vh, 1vh) * .1) - .1vw);
             font-weight: bold;
             
             .aboutme-skills {
@@ -92,11 +93,17 @@ $delay: .5s;
 
                 .aboutme-languages-list{
                     list-style: none;
-                    top: 25%;
+                    top: 30%;
                     left: 5%;
                     position: absolute;
                     margin-bottom: -3vh;
                     margin-bottom: calc(var(--vh, 1vh) * -3);
+                    //background-color: #27ae60;
+                    height: 70%;
+
+                    li {
+                        height: 14%;
+                    }
 
                     .aboutme-listitem.java {
                         width: 35vw;
@@ -677,6 +684,7 @@ $delay: .5s;
 
         .aboutme-header {
             margin: 5vh 1vw 1vh 1vw;
+            margin: calc(var(--vh, 1vh) * 5) 1vw calc(var(--vh, 1vh) * 1) 1vw;
             font-size: 11vmin;
         }
 
@@ -684,6 +692,7 @@ $delay: .5s;
             display: grid;
             // width: 100vw;
             height: 80vh;
+            height: calc(var(--vh, 1vh) * 80);
             grid-template-columns: 90vw;
             grid-template-rows: 90% 10%;
             row-gap: 0;
@@ -713,7 +722,7 @@ $delay: .5s;
 
 
                 .aboutme-summary {
-                    font-size: calc(4px + 1.2vh + .05vw);
+                    font-size: calc(4px + calc(var(--vh, 1vh) * 1.2) + .05vw);
                     // height: calc(500px - 30vw);
                     width: 100%;
 
@@ -725,16 +734,18 @@ $delay: .5s;
 
             .aboutme-right {
                 position: relative;
-                bottom: calc(85.5px + 16vh);
+                bottom: calc(85.5px + calc(var(--vh, 1vh) * 16));
                 right: -45vw;
                 width: 55vw;
                 height: 39vh;
+                height: calc(var(--vh, 1vh) * 39);
 
                 .aboutme-folder-container {
                     height: calc(220px - 15vw);
 
                     .aboutme-foldericon {
-                        margin: auto auto 2vh auto;
+                        margin: auto 1vw 2vh auto;
+                        margin: auto 1vw calc(var(--vh, 1vh) * 2) auto;
                         size: 50%;
                     }
 
