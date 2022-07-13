@@ -605,10 +605,9 @@
   .aboutme-container .aboutme-content-conatiner {
     display: -ms-grid;
     display: grid;
-    width: 100vw;
     height: 80vh;
-    -ms-grid-columns: 100vw;
-        grid-template-columns: 100vw;
+    -ms-grid-columns: 90vw;
+        grid-template-columns: 90vw;
     -ms-grid-rows: 90% 10%;
         grid-template-rows: 90% 10%;
     row-gap: 0;
@@ -620,8 +619,8 @@
   .aboutme-container .aboutme-content-conatiner .aboutme-left {
     -ms-grid-columns: 110%;
         grid-template-columns: 110%;
-    -ms-grid-rows: 20% 60%;
-        grid-template-rows: 20% 60%;
+    -ms-grid-rows: 30% 70%;
+        grid-template-rows: 30% 70%;
     grid-column-gap: 1vw;
     grid-row-gap: 1vw;
     margin: auto;
