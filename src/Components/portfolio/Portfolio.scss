@@ -25,7 +25,7 @@
         margin: auto auto auto 3vw;
         padding: 0;
         color: var(--primary-color);
-        font-size: 5.5em;
+        font-size: calc(var(--vh, 1vh) * 10);
         font-weight: normal;
         letter-spacing: .1em;
         text-shadow:7px 8px rgba(0, 0, 0, 0.137);
