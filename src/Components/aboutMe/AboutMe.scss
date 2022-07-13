@@ -691,6 +691,7 @@ $delay: .5s;
             display: grid;
             // width: 100vw;
             height: 80vh;
+            height: calc(var(--vh, 1vh) * 80);
             grid-template-columns: 90vw;
             grid-template-rows: 90% 10%;
             row-gap: 0;
@@ -736,6 +737,7 @@ $delay: .5s;
                 right: -45vw;
                 width: 55vw;
                 height: 39vh;
+                height: calc(var(--vh, 1vh) * 39);
 
                 .aboutme-folder-container {
                     height: calc(220px - 15vw);
