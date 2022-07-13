@@ -66,7 +66,7 @@ $delay: .5s;
             grid-row-gap: 1vw;
             margin-left: 3vw;
             padding: 0;
-            font-size: calc(20px - 0.1vh - .1vw);
+            font-size: calc(20px - calc(var(--vh, 1vh) * .1) - .1vw);
             font-weight: bold;
             
             .aboutme-skills {
@@ -684,6 +684,7 @@ $delay: .5s;
 
         .aboutme-header {
             margin: 5vh 1vw 1vh 1vw;
+            margin: calc(var(--vh, 1vh) * 5) 1vw calc(var(--vh, 1vh) * 1) 1vw;
             font-size: 11vmin;
         }
 
@@ -721,7 +722,7 @@ $delay: .5s;
 
 
                 .aboutme-summary {
-                    font-size: calc(4px + 1.2vh + .05vw);
+                    font-size: calc(4px + calc(var(--vh, 1vh) * 1.2) + .05vw);
                     // height: calc(500px - 30vw);
                     width: 100%;
 
@@ -733,7 +734,7 @@ $delay: .5s;
 
             .aboutme-right {
                 position: relative;
-                bottom: calc(85.5px + 16vh);
+                bottom: calc(85.5px + calc(var(--vh, 1vh) * 16));
                 right: -45vw;
                 width: 55vw;
                 height: 39vh;
@@ -744,6 +745,7 @@ $delay: .5s;
 
                     .aboutme-foldericon {
                         margin: auto 1vw 2vh auto;
+                        margin: auto 1vw calc(var(--vh, 1vh) * 2) auto;
                         size: 50%;
                     }
 
