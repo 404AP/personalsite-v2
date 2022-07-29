@@ -10,6 +10,7 @@
 }
 
 .contact-container {
+    min-height: -webkit-fill-available;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     //background-color: yellow;
@@ -183,9 +184,7 @@
               background-color: rgba(128, 128, 128, 0.798);
               margin: 0px auto;
               width: calc(403px + 6vmax);
-              height: 85%;
-              
-              
+              height: 110%;              
             }
 
             .contact-form-bottom {

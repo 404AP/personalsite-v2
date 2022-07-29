@@ -28,11 +28,16 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('resize', setHeight);
-    window.addEventListener('beforeinput', setKeyboardActive);
-
+    window.addEventListener('beforeinput', () => {
+      console.log('typing');
+      setKeyboardActive(!keyboardActive);
+    });
     return () => {
       window.removeEventListener('resize', setHeight);
-      window.removeEventListener('beforeinput', setKeyboardActive);
+      window.removeEventListener(
+        'beforeinput',
+        setKeyboardActive(!keyboardActive)
+      );
     };
   }, [curVh]);
   return (
