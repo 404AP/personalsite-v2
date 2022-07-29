@@ -66,6 +66,13 @@
   margin: 5% auto;
 }
 
+.contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .tel-input {
+  height: 10%;
+  width: 100%;
+  font-size: calc(27px + .2vmax);
+  margin: 5% auto;
+}
+
 .contact-container .contact-content-container .contact-left .contact-form-container .contact-form-top .contact-radio-buttons {
   margin: 6% auto;
   border: none;
