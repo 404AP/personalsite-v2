@@ -133,6 +133,13 @@
   color: white;
 }
 
+.navbar-container.isOpen .drawer .social-links a .fiverr {
+  margin-left: .5rem;
+  height: 40%;
+  width: auto;
+  color: white;
+}
+
 .navbar-container.isOpen .drawer .social-links a .linkedin:hover {
   height: 42%;
   width: auto;
@@ -140,6 +147,12 @@
 }
 
 .navbar-container.isOpen .drawer .social-links a .github:hover {
+  height: 42%;
+  width: auto;
+  color: var(--primary-color);
+}
+
+.navbar-container.isOpen .drawer .social-links a .fiverr:hover {
   height: 42%;
   width: auto;
   color: var(--primary-color);

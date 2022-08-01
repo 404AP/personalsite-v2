@@ -135,6 +135,12 @@ $font-family: 'Michroma';
                     width: auto; 
                     color: white;
                 }
+                .fiverr {
+                    margin-left: .5rem;
+                    height: 40%;
+                    width: auto; 
+                    color: white;
+                }
             }
         }
 
@@ -146,6 +152,11 @@ $font-family: 'Michroma';
                     color: var(--primary-color);
                 }
                 .github:hover {
+                    height: 42%;
+                    width: auto; 
+                    color: var(--primary-color);
+                }
+                .fiverr:hover {
                     height: 42%;
                     width: auto; 
                     color: var(--primary-color);

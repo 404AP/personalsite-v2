@@ -80,6 +80,8 @@ const Form = () => {
         <input
           type="tel"
           className="tel-input"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="(xxx)-xxx-xxxx"
           id="tel"
           required
           {...register('Phone Number', { required: true })}
