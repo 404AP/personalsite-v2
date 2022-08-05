@@ -16,28 +16,25 @@ function App() {
 
   function setHeight() {
     let newHeight = window.innerHeight * 0.01;
-    if (
-      (curVh === 0 ||
-        newHeight > curVh ||
-        Math.abs((curVh - newHeight) / curVh) > 0.2) & !keyboardActive
-    ) {
+    console.log(newHeight, keyboardActive);
+    if (curVh === 0 || !keyboardActive) {
       setNewVh(newHeight);
+      console.log('updated page');
       document.documentElement.style.setProperty('--vh', `${newHeight}px`);
     }
+    setKeyboardActive(false);
   }
 
   useEffect(() => {
     window.addEventListener('resize', setHeight);
     window.addEventListener('beforeinput', () => {
       console.log('typing');
-      setKeyboardActive(!keyboardActive);
+      setKeyboardActive(true);
     });
+
     return () => {
       window.removeEventListener('resize', setHeight);
-      window.removeEventListener(
-        'beforeinput',
-        setKeyboardActive(!keyboardActive)
-      );
+      window.removeEventListener('beforeinput', setKeyboardActive(false));
     };
   }, [curVh]);
   return (

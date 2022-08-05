@@ -33,7 +33,7 @@
   -ms-grid-rows: 80%;
       grid-template-rows: 80%;
   overflow: hidden;
-  height: 80%;
+  height: 90%;
   margin: auto;
 }
 
@@ -46,8 +46,7 @@
   font-size: calc(20px - 0.1vh - .1vw);
   background-color: rgba(128, 128, 128, 0.498);
   width: 60%;
-  height: 70%;
-  margin: 5vh auto 0 auto;
+  height: 60%;
   margin: calc(var(--vh, 1vh) * 5) auto 0 auto;
   border: black 3px solid;
   padding: 1%;
@@ -153,7 +152,7 @@
     background-color: rgba(128, 128, 128, 0.798);
     margin: 0px auto;
     width: calc(403px + 6vmax);
-    height: 110%;
+    height: 100%;
   }
   .contact-container .contact-content-container .contact-left .contact-form-container form .contact-form-bottom {
     width: 100%;
