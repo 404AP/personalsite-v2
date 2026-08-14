@@ -1032,6 +1032,19 @@ textarea {
   text-transform: uppercase;
 }
 
+.footer-company {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footer-company img {
+  width: 92px;
+  height: auto;
+  opacity: 0.52;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -1234,6 +1247,10 @@ textarea {
 
   .footer-bottom {
     flex-direction: column;
+  }
+
+  .footer-company {
+    justify-content: flex-start;
   }
 }
 
