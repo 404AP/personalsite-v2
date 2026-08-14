@@ -1,4 +1,24 @@
 # AlvanPrice.com
 
-Thank you for visiting my repository! I wanted to build a website to showcase my talent and allow me to express myself through a brutalist digtal art style. See the live site at  [AlvanPrice.com](https://alvanprice.com/preview).
+Personal website for Alvan Price, focused on technology operations, infrastructure, systems integration, and hands-on technical problem solving.
 
+## DigitalOcean App Platform
+
+Create a **Static Site** component from this repository with:
+
+- Branch: `master`
+- Build command: `npm run build`
+- Output directory: `dist`
+
+The build has no runtime dependencies or environment variables.
+
+After the first successful deployment, add `alvanprice.com` and `www.alvanprice.com` in DigitalOcean, then use the DNS records DigitalOcean provides. Redirect `www` to the root domain.
+
+## Local preview
+
+```sh
+npm run build
+npm start
+```
+
+Open `http://localhost:4173`.

@@ -10,6 +10,13 @@
 
 # production
 /build
+/dist
+
+# generated QA files
+/tmp
+
+# private positioning notes
+/BRAND_BRIEF.md
 
 # misc
 .DS_Store

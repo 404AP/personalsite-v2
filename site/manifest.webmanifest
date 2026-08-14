@@ -1,0 +1,9 @@
+{
+  "name": "Alvan Price",
+  "short_name": "Alvan Price",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0e0c",
+  "theme_color": "#0b0e0c",
+  "icons": [{ "src": "/assets/ap.png", "sizes": "500x500", "type": "image/png" }]
+}
