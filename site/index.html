@@ -34,11 +34,17 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
+    <div class="site-loader" aria-hidden="true">
+      <div class="loader-core">
+        <img src="/assets/ap.png" alt="" />
+        <span></span>
+      </div>
+    </div>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-shell">
         <a class="brand" href="/" aria-label="Alvan Price home">
-          <span class="brand-mark" aria-hidden="true">AP</span>
+          <span class="brand-mark" aria-hidden="true"><img src="/assets/ap.png" alt="" /></span>
           <span class="brand-name">Alvan Price</span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle navigation"><span></span></button>
@@ -117,10 +123,46 @@
         </div>
       </section>
 
+      <section class="section section-border" id="testimonials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-number">03 / What people say</p>
+            <div><h2>Trusted when the work gets complicated.</h2><p>People who have worked beside me have seen the same pattern: I learn the system, stay useful under pressure, and build solutions that hold up.</p></div>
+          </div>
+          <div class="testimonial-grid reveal">
+            <figure class="testimonial-card">
+              <blockquote>“His depth and breadth of knowledge of Linux, networking, security, DevOps/SRE, and cloud technologies was impressive to me. I swear he was born with a Linux server in his hands.”</blockquote>
+              <figcaption>
+                <span class="testimonial-name">James O’Rourke</span>
+                <span class="testimonial-role">Senior Site Reliability Engineer · DevOps consultant · Ex-Microsoft</span>
+                <a href="https://www.linkedin.com/in/james-c-orourke/" target="_blank" rel="noreferrer">View on LinkedIn <span aria-hidden="true">↗</span></a>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <blockquote>“He showed me within the first three days that hiring him was the best thing I could have done for the company.”</blockquote>
+              <figcaption>
+                <span class="testimonial-name">Scott Jackson</span>
+                <span class="testimonial-role">Senior Operations and IT Leader · Former manager</span>
+                <a href="https://www.linkedin.com/in/scott-c-jackson/" target="_blank" rel="noreferrer">View on LinkedIn <span aria-hidden="true">↗</span></a>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <blockquote>“Although Alvan introduced himself to me as a ‘junior’ developer, he was anything but… Alvan’s solution was both ‘efficient and elegant.’”</blockquote>
+              <figcaption>
+                <span class="testimonial-name">Greg Bernstein</span>
+                <span class="testimonial-role">Global Program Manager · Enterprise technology and business programs</span>
+                <a href="https://www.linkedin.com/in/greg-bernstein-85bb035/" target="_blank" rel="noreferrer">View on LinkedIn <span aria-hidden="true">↗</span></a>
+              </figcaption>
+            </figure>
+          </div>
+          <a class="text-link testimonial-all-link" href="https://www.linkedin.com/in/alvanprice/details/recommendations/?detailScreenTabIndex=2" target="_blank" rel="noreferrer">Read all recommendations on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
       <section class="section section-border">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="section-number">03 / Two ways to work together</p>
+            <p class="section-number">04 / Two ways to work together</p>
             <div><h2>Bring me the messy part.</h2><p>Whether the conversation starts with a business problem or a role, I’m most useful where technical depth and operational judgment need to exist in the same person.</p></div>
           </div>
           <div class="path-grid reveal">
@@ -140,7 +182,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-grid"><div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">AP</span><span class="brand-name">Alvan Price</span></a><p class="footer-note">Technology operations, systems integration, infrastructure reliability, and hands-on problem solving.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="/about/">About</a><a href="/work/">Work</a><a href="/experience/">Experience</a><a href="/contact/">Contact</a><a href="/Alvan-Price-Resume.pdf">Résumé</a></nav></div>
+        <div class="footer-grid"><div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><img src="/assets/ap.png" alt="" /></span><span class="brand-name">Alvan Price</span></a><p class="footer-note">Technology operations, systems integration, infrastructure reliability, and hands-on problem solving.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="/about/">About</a><a href="/work/">Work</a><a href="/experience/">Experience</a><a href="/contact/">Contact</a><a href="/Alvan-Price-Resume.pdf">Résumé</a></nav></div>
         <div class="footer-bottom"><span>© <span data-year></span> Alvan Price</span><span class="footer-company"><span>Atlanta, Georgia · Consulting through</span><img src="/assets/so-atlanta-operations.png" alt="So Atlanta Operations LLC" /></span></div>
       </div>
     </footer>
