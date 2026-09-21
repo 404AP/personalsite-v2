@@ -49,3 +49,19 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
 
   revealElements.forEach((element) => observer.observe(element));
 }
+
+const themeButton = document.querySelector('.theme-toggle');
+const updateThemeButton = () => { if (themeButton) themeButton.setAttribute('aria-pressed', String(document.documentElement.dataset.theme === 'night')); };
+updateThemeButton();
+themeButton?.addEventListener('click', () => {
+  const theme = document.documentElement.dataset.theme === 'night' ? 'light' : 'night';
+  document.documentElement.dataset.theme = theme;
+  try { localStorage.setItem('ap-theme', theme); } catch {}
+  updateThemeButton();
+});
+document.querySelector('[data-reset-preferences]')?.addEventListener('click', () => {
+  try { localStorage.removeItem('ap-theme'); } catch {}
+  delete document.documentElement.dataset.theme;
+  updateThemeButton();
+  document.querySelector('[data-preference-status]').textContent = 'Saved appearance preference cleared. Light mode is active.';
+});

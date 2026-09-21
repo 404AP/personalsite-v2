@@ -35,6 +35,10 @@ MUTED = HexColor("#9aa6a0")
 FAINT = HexColor("#69736e")
 LINE = HexColor("#29312d")
 SIGNAL = HexColor("#8dfc64")
+PRINT_LIGHT = HexColor("#c8d0cc")
+PRINT_MID = HexColor("#909b95")
+PRINT_GRID = HexColor("#223029")
+PRINT_DIAGRAM = HexColor("#61786b")
 
 ARIAL = "/System/Library/Fonts/Supplemental/Arial.ttf"
 ARIAL_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
@@ -49,10 +53,10 @@ def register_fonts():
     pdfmetrics.registerFont(TTFont("AP-Mono-Bold", MONO_BOLD))
 
 
-def background(c):
+def background(c, grid_color=HexColor("#152019")):
     c.setFillColor(PAPER)
     c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
-    c.setStrokeColor(HexColor("#152019"))
+    c.setStrokeColor(grid_color)
     c.setLineWidth(0.35)
     spacing = 22
     x = BLEED - spacing
@@ -84,7 +88,7 @@ def tracking_text(c, text, x, y, font, size, color, tracking=1.1):
 
 
 def draw_front(c):
-    background(c)
+    background(c, grid_color=PRINT_GRID)
     safe_x = BLEED + 14
     safe_y = BLEED + 14
 
@@ -95,9 +99,9 @@ def draw_front(c):
     tracking_text(c, "TECHNOLOGY OPERATIONS", safe_x, 82,
                   "AP-Mono-Bold", 6.7, SIGNAL, 0.75)
     tracking_text(c, "CONSULTANT", safe_x, 70,
-                  "AP-Mono", 6.7, MUTED, 0.75)
+                  "AP-Mono-Bold", 6.7, INK, 0.75)
 
-    c.setFillColor(MUTED)
+    c.setFillColor(PRINT_LIGHT)
     c.setFont("AP-Sans", 8.2)
     c.drawString(safe_x, 51, "I find bottlenecks, connect systems,")
     c.drawString(safe_x, 40, "and fix what gets in the way.")
@@ -106,18 +110,18 @@ def draw_front(c):
     c.setLineWidth(1.2)
     c.line(safe_x, safe_y, safe_x + 23, safe_y)
     tracking_text(c, "SEE  /  CONNECT  /  FIX  /  EXPLAIN", safe_x + 30, safe_y - 2,
-                  "AP-Mono-Bold", 5.5, FAINT, 0.35)
+                  "AP-Mono-Bold", 5.5, PRINT_MID, 0.35)
 
     # A quiet systems-diagram motif that mirrors the site's operational panels.
     x0 = PAGE_W - BLEED - 46
     y0 = 39
-    c.setStrokeColor(HexColor("#36503c"))
+    c.setStrokeColor(PRINT_DIAGRAM)
     c.setLineWidth(0.55)
     c.line(x0, y0, x0, y0 + 40)
     c.line(x0, y0 + 20, x0 + 22, y0 + 20)
     for dx, dy in [(0, 0), (0, 20), (0, 40), (22, 20)]:
         c.setFillColor(SIGNAL if (dx, dy) == (22, 20) else PANEL)
-        c.setStrokeColor(SIGNAL if (dx, dy) == (22, 20) else HexColor("#466050"))
+        c.setStrokeColor(SIGNAL if (dx, dy) == (22, 20) else PRINT_DIAGRAM)
         c.circle(x0 + dx, y0 + dy, 2.6, stroke=1, fill=1)
 
     c.showPage()

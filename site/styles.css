@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap");
+500;600&family=Manrope:wght@400;500;600;700;800&display=swap");
 
 :root {
   --ink: #e9edeb;
@@ -233,7 +233,7 @@ textarea {
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  color: var(--signal);
+  color: var(--signal-text);
 }
 
 .nav-resume {
@@ -279,7 +279,7 @@ textarea {
 .section-number,
 .mono-label {
   margin: 0;
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
   font-weight: 600;
@@ -327,14 +327,14 @@ textarea {
 
 .hero-copy h1 span,
 .page-hero h1 span {
-  color: var(--signal);
+  color: var(--signal-text);
 }
 
 .hero-lede,
 .page-lede {
   max-width: 760px;
   margin: 0;
-  color: #b8c1bc;
+  color: var(--muted);
   font-size: clamp(1.08rem, 1.8vw, 1.32rem);
   line-height: 1.65;
 }
@@ -356,25 +356,25 @@ textarea {
   padding: 13px 19px;
   border: 1px solid var(--line-bright);
   color: var(--ink);
-  background: rgba(17, 22, 19, 0.72);
+  background: var(--panel);
   font-weight: 700;
   text-decoration: none;
   transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
 .button:hover {
-  border-color: var(--signal);
+  border-color: var(--signal-text);
   transform: translateY(-2px);
 }
 
 .button-primary {
-  border-color: var(--signal);
+  border-color: var(--signal-text);
   color: #071006;
   background: var(--signal);
 }
 
 .button-primary:hover {
-  color: var(--signal);
+  color: var(--signal-text);
   background: transparent;
 }
 
@@ -404,7 +404,7 @@ textarea {
 .operations-panel {
   position: relative;
   border: 1px solid var(--line-bright);
-  background: rgba(17, 22, 19, 0.82);
+  background: var(--panel);
   box-shadow: var(--shadow);
 }
 
@@ -429,7 +429,7 @@ textarea {
 }
 
 .panel-status {
-  color: var(--signal);
+  color: var(--signal-text);
 }
 
 .signal-list {
@@ -465,14 +465,14 @@ textarea {
 
 .signal-value {
   align-self: center;
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
 }
 
 .proof-strip {
   border-block: 1px solid var(--line);
-  background: rgba(17, 22, 19, 0.58);
+  background: var(--panel);
 }
 
 .proof-grid {
@@ -554,16 +554,16 @@ textarea {
   padding: clamp(28px, 4vw, 44px);
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: rgba(17, 22, 19, 0.34);
+  background: var(--panel);
   transition: background 180ms ease;
 }
 
 .capability-card:hover {
-  background: rgba(21, 27, 23, 0.82);
+  background: var(--panel);
 }
 
 .card-index {
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
 }
@@ -610,7 +610,7 @@ textarea {
 }
 
 .result-meta {
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.08em;
@@ -622,7 +622,7 @@ textarea {
   align-items: center;
   gap: 8px;
   margin-top: 28px;
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
   font-weight: 600;
@@ -684,7 +684,7 @@ textarea {
 
 .testimonial-card::before {
   margin-bottom: 24px;
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: Georgia, serif;
   font-size: 3.5rem;
   line-height: 0.5;
@@ -708,7 +708,7 @@ textarea {
 }
 
 .testimonial-name {
-  color: var(--signal);
+  color: var(--signal-text);
   font-weight: 800;
 }
 
@@ -732,7 +732,7 @@ textarea {
 }
 
 .testimonial-card figcaption a:hover {
-  color: var(--signal);
+  color: var(--signal-text);
 }
 
 .testimonial-all-link {
@@ -774,7 +774,7 @@ textarea {
 
 .cta-band .button {
   border-color: #071006;
-  color: var(--signal);
+  color: var(--signal-text);
   background: #071006;
 }
 
@@ -807,7 +807,7 @@ textarea {
 
 .prose p {
   margin: 0 0 24px;
-  color: #b8c1bc;
+  color: var(--muted);
   font-size: 18px;
 }
 
@@ -864,7 +864,7 @@ textarea {
 
 .timeline-period {
   padding-top: 5px;
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.06em;
@@ -981,7 +981,7 @@ textarea {
 }
 
 .work-story-aside strong {
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: clamp(2.2rem, 4vw, 4.2rem);
   letter-spacing: -0.06em;
@@ -991,7 +991,7 @@ textarea {
 .work-story-aside .work-story-icon {
   display: block;
   width: clamp(48px, 5vw, 70px);
-  color: var(--signal);
+  color: var(--signal-text);
   letter-spacing: 0;
 }
 
@@ -1142,7 +1142,7 @@ textarea {
 }
 
 .contact-detail a:hover {
-  color: var(--signal);
+  color: var(--signal-text);
 }
 
 .site-footer {
@@ -1180,7 +1180,7 @@ textarea {
 }
 
 .footer-links a:hover {
-  color: var(--signal);
+  color: var(--signal-text);
 }
 
 .footer-bottom {
@@ -1231,7 +1231,7 @@ textarea {
 
 .not-found strong {
   display: block;
-  color: var(--signal);
+  color: var(--signal-text);
   font-family: "IBM Plex Mono", monospace;
   font-size: clamp(5rem, 18vw, 12rem);
   letter-spacing: -0.08em;
@@ -1468,3 +1468,42 @@ textarea {
     display: none;
   }
 }
+
+/* Light-first consulting identity, with visitor-selected night mode. */
+:root { color-scheme: light; --ink:#202c23; --muted:#526055; --faint:#526855; --paper:#ffffff; --panel:#f4f7f2; --panel-2:#edf4e8; --line:#dce5d7; --line-bright:#afbfaa; --signal:#67ba43; --signal-text:#34751c; --signal-dark:#edf7e8; --warm:#202c23; --shadow:0 18px 48px rgba(21,44,67,.08); --on-signal:#102309; }
+:root[data-theme="night"] { color-scheme:dark; --ink:#e9edeb; --muted:#b8c6b9; --faint:#a3b7a5; --paper:#101810; --panel:#192419; --panel-2:#233223; --line:#354b36; --line-bright:#59745b; --signal:#67ba43; --signal-text:#8dfc64; --signal-dark:#183714; --warm:#e9edeb; --on-signal:#101810; }
+body { background:var(--paper); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+body::before,.hero::after,.site-loader { display:none; }
+.site-header { background:var(--paper); border-color:var(--line); }
+.hero { min-height:auto; padding:100px 0 88px; border-bottom:1px solid var(--line); }
+.hero-copy h1,.page-hero h1 { font-family:Georgia,"Times New Roman",serif; font-weight:400; letter-spacing:-.045em; line-height:1.06; font-size:clamp(2.8rem,5.4vw,5rem); }
+.operations-panel { box-shadow:none; border:0; border-top:4px solid var(--signal); background:var(--panel); }
+.eyebrow,.mono-label,.section-number { font-size:.875rem; }
+.button-primary,.skip-link { color:var(--on-signal); background:var(--signal); }
+.cta-band { background:var(--panel-2); color:var(--ink); }
+.cta-band .eyebrow { color:var(--signal-text); }
+.cta-band .button { background:var(--signal); color:var(--on-signal); border-color:var(--signal-text); }
+.brand-mark { background:var(--panel); border-radius:3px; }
+.footer-company img { background:var(--panel); padding:6px; border-radius:3px; }
+.theme-toggle { font:inherit; font-size:.875rem; color:var(--ink); background:var(--panel); border:1px solid var(--line-bright); padding:8px 12px; cursor:pointer; white-space:nowrap; }
+button:focus-visible,a:focus-visible { outline:3px solid var(--signal); outline-offset:4px; }
+.legal-links { display:flex; flex-wrap:wrap; gap:20px; margin-top:24px; font-size:.875rem; }
+.legal-content { max-width:780px; padding-block:56px; }
+.legal-content h2 { margin-top:36px; }
+.legal-content p { color:var(--muted); }
+.preference-controls { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+@media(max-width:760px) { .hero { padding:56px 0; } .theme-toggle { margin-left:auto; } .nav-shell { gap:12px; flex-wrap:wrap; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+::selection { color:var(--on-signal); background:var(--signal); }
+
+/* Make the consulting action primary; appearance is a quiet utility. */
+.theme-toggle { display:inline-grid; place-items:center; width:40px; height:40px; min-width:40px; padding:0; margin-left:auto; border:0; border-radius:50%; background:transparent; color:var(--muted); }
+.theme-toggle:hover { background:var(--panel); color:var(--ink); }
+.site-nav .nav-resume { display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:46px; padding:12px 18px; border:1px solid var(--signal-text); border-radius:4px; background:var(--signal); color:#102309; font-family:inherit; font-size:.9375rem; font-weight:750; text-transform:none; letter-spacing:0; }
+.site-nav .nav-resume:hover,.site-nav .nav-resume[aria-current="page"] { background:var(--signal); color:#102309; box-shadow:0 0 0 3px var(--signal-dark); }
+.button { border-radius:4px; }
+.button-primary,.cta-band .button { background:var(--signal); color:#102309; border:1px solid var(--signal-text); padding:15px 24px; font-weight:750; }
+.button-primary:hover,.cta-band .button:hover { background:var(--signal); color:#102309; box-shadow:0 0 0 4px var(--signal-dark); }
+
+.site-header .brand-mark { background:transparent; border-radius:0; }
