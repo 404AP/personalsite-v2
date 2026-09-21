@@ -1202,9 +1202,9 @@ textarea {
 }
 
 .footer-company img {
-  width: 92px;
+  width: 108px;
   height: auto;
-  opacity: 0.52;
+  opacity: 1;
 }
 
 .reveal {
@@ -1482,7 +1482,8 @@ body::before,.hero::after,.site-loader { display:none; }
 .cta-band .eyebrow { color:var(--signal-text); }
 .cta-band .button { background:var(--signal); color:var(--on-signal); border-color:var(--signal-text); }
 .brand-mark { background:var(--panel); border-radius:3px; }
-.footer-company img { background:var(--panel); padding:6px; border-radius:3px; }
+.footer-company img { background:transparent; padding:0; border-radius:0; filter:brightness(.56) saturate(1.4); }
+:root[data-theme="night"] .footer-company img { filter:none; }
 .theme-toggle { font:inherit; font-size:.875rem; color:var(--ink); background:var(--panel); border:1px solid var(--line-bright); padding:8px 12px; cursor:pointer; white-space:nowrap; }
 button:focus-visible,a:focus-visible { outline:3px solid var(--signal); outline-offset:4px; }
 .legal-links { display:flex; flex-wrap:wrap; gap:20px; margin-top:24px; font-size:.875rem; }
