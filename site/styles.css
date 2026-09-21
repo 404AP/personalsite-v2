@@ -1481,7 +1481,6 @@ body::before,.hero::after,.site-loader { display:none; }
 .cta-band { background:var(--panel-2); color:var(--ink); }
 .cta-band .eyebrow { color:var(--signal-text); }
 .cta-band .button { background:var(--signal); color:var(--on-signal); border-color:var(--signal-text); }
-.brand-mark { background:var(--panel); border-radius:3px; }
 .footer-company img { background:transparent; padding:0; border-radius:0; filter:brightness(.56) saturate(1.4); }
 :root[data-theme="night"] .footer-company img { filter:none; }
 .theme-toggle { font:inherit; font-size:.875rem; color:var(--ink); background:var(--panel); border:1px solid var(--line-bright); padding:8px 12px; cursor:pointer; white-space:nowrap; }
