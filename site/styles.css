@@ -1,5 +1,3 @@
-500;600&family=Manrope:wght@400;500;600;700;800&display=swap");
-
 :root {
   --ink: #e9edeb;
   --muted: #9aa6a0;
@@ -165,7 +163,7 @@ textarea {
 }
 
 .container {
-  width: min(calc(100% - 40px), var(--max-width));
+  width: min(calc(100% - 48px), var(--max-width, 1180px));
   margin-inline: auto;
 }
 
@@ -1297,9 +1295,9 @@ textarea {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .container {
-    width: min(calc(100% - 28px), var(--max-width));
+    width: min(calc(100% - 40px), var(--max-width, 1180px));
   }
 
   .nav-toggle {
