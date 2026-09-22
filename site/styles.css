@@ -517,6 +517,47 @@ textarea {
   border-top: 1px solid var(--line);
 }
 
+.ai-debt-section {
+  border-top: 1px solid var(--line);
+  background: var(--panel-2);
+}
+
+.ai-debt-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: clamp(44px, 8vw, 120px);
+}
+
+.ai-debt-section h2 {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: var(--warm);
+  font-size: clamp(2.5rem, 5vw, 4.7rem);
+  letter-spacing: -0.065em;
+  line-height: 1.02;
+}
+
+.ai-debt-copy {
+  max-width: 580px;
+}
+
+.ai-debt-copy p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.ai-debt-copy p:first-child {
+  color: var(--ink);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.ai-debt-copy .button {
+  margin-top: 10px;
+}
+
 .section-heading {
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
@@ -1249,7 +1290,8 @@ textarea {
 @media (max-width: 900px) {
   .hero-grid,
   .page-intro-grid,
-  .cta-grid {
+  .cta-grid,
+  .ai-debt-grid {
     grid-template-columns: 1fr;
   }
 
