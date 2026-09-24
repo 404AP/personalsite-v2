@@ -577,6 +577,10 @@ textarea {
   background: var(--panel);
 }
 
+.maturity-card:last-child:nth-child(odd) {
+  grid-column: span 2;
+}
+
 .maturity-card h2,
 .maturity-card h3 {
   max-width: 620px;
@@ -1573,6 +1577,10 @@ textarea {
   .contact-grid,
   .maturity-grid {
     grid-template-columns: 1fr;
+  }
+
+  .maturity-card:last-child:nth-child(odd) {
+    grid-column: auto;
   }
 
   .value-card:nth-child(3) {
